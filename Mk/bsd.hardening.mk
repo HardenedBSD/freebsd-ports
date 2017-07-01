@@ -5,11 +5,14 @@
 .if !defined(__BSD_PORT_HARDENING_MK)
 __BSD_PORT_HARDENING_MK=1
 
+
+OPTIONS_GROUP+=		HARDENING
+
 ####################################################
 ### Position-Idependent Executable (PIE) support ###
 ####################################################
 
-OPTIONS_DEFINE+=	PIE
+OPTIONS_GROUP_HARDENING+=	PIE
 PIE_DESC=		Build as PIE
 PIE_USES=		pie
 PIE_ARGS?=
@@ -56,7 +59,7 @@ OPTIONS_DEFAULT+=	PIE
 ### RELRO + BIND_NOW support ###
 ################################
 
-OPTIONS_DEFINE+=	RELRO
+OPTIONS_GROUP_HARDENING+=	RELRO
 RELRO_DESC=		Build with RELRO + BIND_NOW
 RELRO_USES=		relro
 
@@ -90,7 +93,7 @@ OPTIONS_DEFAULT+=	RELRO
 ### SafeStack support ###
 #########################
 
-OPTIONS_DEFINE+=	SAFESTACK
+OPTIONS_GROUP_HARDENING+=	SAFESTACK
 SAFESTACK_DESC=		Build with SafeStack
 SAFESTACK_USES=		safestack
 SAFESTACK_ARGS?=
@@ -103,7 +106,7 @@ OPTIONS_DEFAULT+=	SAFESTACK
 ### CFI support ###
 ###################
 
-OPTIONS_DEFINE+=	CFIHARDEN
+OPTIONS_GROUP_HARDENING+=	CFIHARDEN
 CFIHARDEN_DESC=		Build with CFI (Requires lld 4.0.0 in base)
 CFIHARDEN_USES=		cfi
 
