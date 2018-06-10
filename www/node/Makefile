@@ -36,6 +36,11 @@ BUNDLED_SSL_DESC=		Use node.js's bundled OpenSSL implementation
 BUNDLED_SSL_USES_OFF=		ssl
 BUNDLED_SSL_CONFIGURE_OFF=	--shared-openssl --openssl-use-def-ca-store
 BUNDLED_SSL_RUN_DEPENDS_OFF=	ca_root_nss>=0:security/ca_root_nss
+BUNDLED_SSL_USE=		binutils=yes
+BUNDLED_SSL_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-deps_v8_tools_disasm.py \
+				${PATCHDIR}/extra-patch-deps_v8_tools_grokdump.py \
+				${PATCHDIR}/extra-patch-deps_v8_tools_ll__prof.py \
+				files/extra-patch_tools_genv8constants.py
 
 NLS_CONFIGURE_ON=	--with-intl=system-icu
 NLS_LIB_DEPENDS=	libicui18n.so:devel/icu
