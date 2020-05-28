@@ -13,12 +13,10 @@ COMMENT=	Scilab 1-D and 2-D Wavelet Toolbox
 BUILD_DEPENDS=	${SCILAB_CMD}:math/scilab
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
-=======
+
 USES=		dos2unix zip
 USE_LOCALE=	en_US.UTF-8
->>>>>>> upstream/master
 
 SCILAB_CMD=	${LOCALBASE}/bin/scilab-adv-cli
 SCILAB_ARGS=	-noatomsautoload -nb -nouserstartup
