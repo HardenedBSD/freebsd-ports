@@ -1893,7 +1893,9 @@
     SUBDIR += rubygem-ethon
     SUBDIR += rubygem-eventmachine_httpserver
     SUBDIR += rubygem-faraday
+    SUBDIR += rubygem-faraday0
     SUBDIR += rubygem-faraday_middleware
+    SUBDIR += rubygem-faraday_middleware0
     SUBDIR += rubygem-faye
     SUBDIR += rubygem-faye-websocket
     SUBDIR += rubygem-fcgi
