@@ -3,8 +3,17 @@
   on some platform, but for now simply comment it here.
   See https://github.com/dumbbell/test-tls-initial-exec for more info
 - Add dependency on libxv for xvmc, this is fixed in later mesa version.
---- meson.build.orig	2019-06-26 20:14:08 UTC
+--- meson.build.orig	2020-06-05 18:23:59 UTC
 +++ meson.build
+@@ -25,7 +25,7 @@ project(
+     [find_program('python', 'python2', 'python3'), 'bin/meson_get_version.py']
+   ).stdout(),
+   license : 'MIT',
+-  meson_version : '>= 0.45',
++  meson_version : '>= 0.46',
+   default_options : ['buildtype=debugoptimized', 'b_ndebug=if-release', 'c_std=c99', 'cpp_std=c++11']
+ )
+ 
 @@ -336,7 +336,7 @@ if with_egl and not (with_platform_drm or with_platfor
    endif
  endif
