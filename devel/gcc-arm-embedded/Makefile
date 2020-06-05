@@ -21,16 +21,11 @@ NOT_FOR_ARCHS_REASON=	Very slow to build on emulator
 
 BUILD_DEPENDS=		objdump:devel/binutils
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
 
-OPTIONS_DEFINE=	PYGDB EXAMPLES HTML PDF DOCS SYMLINK
-OPTIONS_DEFAULT=PYGDB SYMLINK
-=======
 OPTIONS_DEFINE=	PURE PYGDB EXAMPLES HTML PDF DOCS SYMLINK
 OPTIONS_DEFAULT=PURE PYGDB SYMLINK
 PURE_DESC=	Use all libraries from bundle, do not depend on anything
->>>>>>> upstream/master
 HTML_DESC=	Install HTML documentation
 PDF_DESC=	Install PDF documentation (requires TeX, it is huge)
 PYGDB_DESC=	Build and install python-enabled gdb in addition to standard one

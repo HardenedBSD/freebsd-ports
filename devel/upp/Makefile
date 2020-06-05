@@ -17,13 +17,9 @@ BROKEN_powerpc=		Does not compile on ${ARCH}: error Unknown CPU architecture
 BROKEN_powerpc64=	Does not compile on ${ARCH}: error Unknown CPU architecture
 BROKEN_sparc64=		Does not compile on ${ARCH}
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off
 
-USES=		compiler:c++11-lib
-=======
 USES=		compiler:c++14-lang pkgconfig:both tar:xz
->>>>>>> upstream/master
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
