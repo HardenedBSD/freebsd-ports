@@ -16,6 +16,7 @@
     SUBDIR += accounts-qml-module
     SUBDIR += accountsservice
     SUBDIR += acerhdf-kmod
+    SUBDIR += acltool
     SUBDIR += acpi_call
     SUBDIR += acpica-tools
     SUBDIR += acts
@@ -178,6 +179,7 @@
     SUBDIR += cmogstored
     SUBDIR += cmospwd
     SUBDIR += colorize
+    SUBDIR += conan
     SUBDIR += condor
     SUBDIR += confctl
     SUBDIR += conky
@@ -1062,6 +1064,7 @@
     SUBDIR += rsyncbackup
     SUBDIR += rsyncrypto
     SUBDIR += rsyslog8
+    SUBDIR += rtsx-kmod
     SUBDIR += rtty
     SUBDIR += rubygem-backup
     SUBDIR += rubygem-bolt
