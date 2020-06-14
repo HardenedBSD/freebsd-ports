@@ -5900,10 +5900,12 @@
     SUBDIR += rubygem-csv
     SUBDIR += rubygem-cucumber
     SUBDIR += rubygem-cucumber-core
+    SUBDIR += rubygem-cucumber-cucumber-expressions
     SUBDIR += rubygem-cucumber-expressions
     SUBDIR += rubygem-cucumber-expressions6
     SUBDIR += rubygem-cucumber-formatter-dots
     SUBDIR += rubygem-cucumber-messages
+    SUBDIR += rubygem-cucumber-messages4
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
     SUBDIR += rubygem-cucumber-tag_expressions1
@@ -6264,6 +6266,7 @@
     SUBDIR += rubygem-progressbar
     SUBDIR += rubygem-prometheus-client-mmap
     SUBDIR += rubygem-protected_attributes
+    SUBDIR += rubygem-protobuf-cucumber
     SUBDIR += rubygem-protocol
     SUBDIR += rubygem-pry
     SUBDIR += rubygem-pry-byebug
