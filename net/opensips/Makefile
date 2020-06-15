@@ -13,6 +13,8 @@ COMMENT=		Open SIP Server
 LICENSE=		GPLv2
 LICENSE_FILE=		${WRKSRC}/COPYING
 
+USE_HARDENING=		pie:off relro:off
+
 DEPRECATED=	Uses deprecated version of python
 EXPIRATION_DATE=	2020-09-15
 
@@ -45,15 +47,7 @@ DOCSDIR=		share/doc/opensips
 USERS=			opensips
 GROUPS=			opensips
 
-<<<<<<< HEAD
-USE_HARDENING=		pie:off relro:off
-
-USES=			gmake ncurses perl5 pkgconfig python:2.7 shebangfix ssl
-USE_RC_SUBR=		opensips
-USE_GCC=		yes
-=======
 LDFLAGS+=		-pthread
->>>>>>> freebsd/master
 
 NOPRECIOUSMAKEVARS=	yes
 
