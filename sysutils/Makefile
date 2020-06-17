@@ -363,6 +363,7 @@
     SUBDIR += fswatch-mon
     SUBDIR += ftwin
     SUBDIR += fusefs-afuse
+    SUBDIR += fusefs-bindfs
     SUBDIR += fusefs-chironfs
     SUBDIR += fusefs-cryptofs
     SUBDIR += fusefs-curlftpfs
@@ -939,6 +940,7 @@
     SUBDIR += pv
     SUBDIR += pwd_unmkdb
     SUBDIR += pwgen
+    SUBDIR += pwol
     SUBDIR += pwsafe
     SUBDIR += pxattr
     SUBDIR += py-analyzemft

@@ -396,6 +396,8 @@
     SUBDIR += libproxy-webkit3
     SUBDIR += libpushover
     SUBDIR += librdkafka
+    SUBDIR += librespeed-cli
+    SUBDIR += librespeed-go
     SUBDIR += librsync
     SUBDIR += libsignal
     SUBDIR += libsrtp2
