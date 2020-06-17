@@ -13,15 +13,10 @@ COMMENT=	Modular IRC client with many features
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
 
-USES=		autoreconf cpe gettext-runtime gmake gnome libtool ncurses \
-		pkgconfig tar:xz
-=======
 USES=		autoreconf cpe gettext-runtime gmake gnome libtool localbase \
 		ncurses pkgconfig tar:xz
->>>>>>> upstream/master
 USE_GNOME=	glib20
 
 GNU_CONFIGURE=	yes
