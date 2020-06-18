@@ -1261,6 +1261,7 @@
     SUBDIR += vanguards-tor
     SUBDIR += vault
     SUBDIR += veracrypt
+    SUBDIR += vigenere
     SUBDIR += vinetto
     SUBDIR += vlock
     SUBDIR += vm-to-tor
