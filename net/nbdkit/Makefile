@@ -9,14 +9,14 @@ CATEGORIES=	net
 MASTER_SITES=	http://download.libguestfs.org/${PORTNAME}/${PORTVERSION:R}-stable/
 
 MAINTAINER=	asomers@FreeBSD.org
-COMMENT=	NBD server toolkit with stable ABI and permissive license
+COMMENT=	Network Block Device server toolkit with stable ABI and permissive license
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	bash:shells/bash
 
-USES=	gmake libtool
+USES=		compiler:c11 gmake libtool
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
