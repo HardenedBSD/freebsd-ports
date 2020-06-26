@@ -4681,6 +4681,7 @@
     SUBDIR += py-opendht
     SUBDIR += py-opengrok-tools
     SUBDIR += py-openstacksdk
+    SUBDIR += py-openstacksdk043
     SUBDIR += py-opentracing
     SUBDIR += py-opster
     SUBDIR += py-optik
@@ -5555,6 +5556,7 @@
     SUBDIR += rubygem-aws-sdk-groundstation
     SUBDIR += rubygem-aws-sdk-guardduty
     SUBDIR += rubygem-aws-sdk-health
+    SUBDIR += rubygem-aws-sdk-honeycode
     SUBDIR += rubygem-aws-sdk-iam
     SUBDIR += rubygem-aws-sdk-imagebuilder
     SUBDIR += rubygem-aws-sdk-importexport
@@ -6393,6 +6395,7 @@
     SUBDIR += rubygem-semver2
     SUBDIR += rubygem-semverse
     SUBDIR += rubygem-sentry-raven
+    SUBDIR += rubygem-sentry-raven2
     SUBDIR += rubygem-sentry-raven25
     SUBDIR += rubygem-sentry-raven29
     SUBDIR += rubygem-sequel
