@@ -3,7 +3,7 @@
 
 PORTNAME=	xfce4-print
 PORTVERSION=	4.6.1
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	print xfce
 MASTER_SITES=	XFCE/archive
 DISTNAME=	xfprint-${DISTVERSIONFULL}
@@ -13,6 +13,8 @@ MAINTAINER=	xfce@FreeBSD.org
 COMMENT=	Print system support for the Xfce Desktop
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Unsupported upstream since 2009.
 
 BUILD_DEPENDS=	a2ps:print/a2ps
 RUN_DEPENDS=	a2ps:print/a2ps
@@ -32,15 +34,12 @@ INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=		LETTER NLS
 OPTIONS_SINGLE=		PRINTMETHOD
-OPTIONS_SINGLE_PRINTMETHOD=	LPR CUPS
+OPTIONS_SINGLE_PRINTMETHOD=	LPR
 OPTIONS_DEFAULT=	LPR
 OPTIONS_SUB=		yes
 
 LETTER_DESC=	Use letter paper format instead of A4
 LPR_DESC=	LPR printing system support
-
-CUPS_CONFIGURE_ENABLE=	cups
-CUPS_LIB_DEPENDS=	libcups.so:print/cups
 
 LETTER_CONFIGURE_ENABLE=letter
 LPR_CONFIGURE_ENABLE=	bsdlpr
