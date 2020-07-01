@@ -24,17 +24,9 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libossp-uuid.so:misc/ossp-uuid \
 		libyaml.so:textproc/libyaml
 
-<<<<<<< HEAD
-SWIPLDIR=	${PORTNAME:C/-//}-${PORTVERSION}
-
 USE_HARDENING=	pie:off relro:off
 
-NOPRECIOUSMAKEVARS=	yes
-
-USES=		compiler:c11 libedit gmake jpeg libarchive pathfix pkgconfig \
-=======
 USES=		compiler:c11 libedit cmake jpeg libarchive pathfix pkgconfig \
->>>>>>> upstream/master
 		readline shebangfix ssl xorg
 USE_XORG=	ice sm x11 xext xft xinerama xpm xt
 
