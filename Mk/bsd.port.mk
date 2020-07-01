@@ -5367,22 +5367,22 @@ _PACKAGE_SEQ=	100:package-message 300:pre-package 450:pre-package-script \
 
 fixup-mitigations:
 .for _file in ${PAGEEXEC_DISABLE}
-		/usr/sbin/hbsdcontrol pax disable pageexec ${STAGEDIR}/${PREFIX}/${_file}
+		-/usr/sbin/hbsdcontrol pax disable pageexec ${STAGEDIR}/${PREFIX}/${_file}
 .endfor
 .for _file in ${MPROTECT_DISABLE}
-		/usr/sbin/hbsdcontrol pax disable mprotect ${STAGEDIR}/${PREFIX}/${_file}
+		-/usr/sbin/hbsdcontrol pax disable mprotect ${STAGEDIR}/${PREFIX}/${_file}
 .endfor
 .for _file in ${SEGVGUARD_DISABLE}
-		/usr/sbin/hbsdcontrol pax disable segvguard ${STAGEDIR}/${PREFIX}/${_file}
+		-/usr/sbin/hbsdcontrol pax disable segvguard ${STAGEDIR}/${PREFIX}/${_file}
 .endfor
 .for _file in ${ASLR_DISABLE}
-		/usr/sbin/hbsdcontrol pax disable aslr ${STAGEDIR}/${PREFIX}/${_file}
+		-/usr/sbin/hbsdcontrol pax disable aslr ${STAGEDIR}/${PREFIX}/${_file}
 .endfor
 .for _file in ${DISALLOW_MAP32BIT_DISABLE}
-		/usr/sbin/hbsdcontrol pax disable disallow_map32bit ${STAGEDIR}/${PREFIX}/${_file}
+		-/usr/sbin/hbsdcontrol pax disable disallow_map32bit ${STAGEDIR}/${PREFIX}/${_file}
 .endfor
 .for _file in ${SHLIBRANDOM_DISABLE}
-		/usr/sbin/hbsdcontrol pax disable shlibrandom ${STAGEDIR}/${PREFIX}/${_file}
+		-/usr/sbin/hbsdcontrol pax disable shlibrandom ${STAGEDIR}/${PREFIX}/${_file}
 .endfor
 
 # Enforce order for -jN builds
