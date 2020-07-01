@@ -1183,6 +1183,7 @@
     SUBDIR += ripe-whois
     SUBDIR += routinator
     SUBDIR += rp-pppoe
+    SUBDIR += rpki-client
     SUBDIR += rsocket-cpp
     SUBDIR += rsplib
     SUBDIR += rsync
