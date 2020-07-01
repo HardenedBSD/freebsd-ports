@@ -4328,7 +4328,6 @@
     SUBDIR += py-distlib
     SUBDIR += py-distorm
     SUBDIR += py-distributed
-    SUBDIR += py-dj22-django-rq
     SUBDIR += py-django-rq
     SUBDIR += py-docker-py
     SUBDIR += py-dockerpty
@@ -5077,6 +5076,7 @@
     SUBDIR += py-speaklater
     SUBDIR += py-spyder
     SUBDIR += py-sqlcc
+    SUBDIR += py-srsly
     SUBDIR += py-stackexchange
     SUBDIR += py-statgrab
     SUBDIR += py-statsd
@@ -5145,6 +5145,7 @@
     SUBDIR += py-tree-format
     SUBDIR += py-trimesh
     SUBDIR += py-trollius
+    SUBDIR += py-ttictoc
     SUBDIR += py-ttystatus
     SUBDIR += py-tvrage
     SUBDIR += py-tw.forms
@@ -5911,14 +5912,11 @@
     SUBDIR += rubygem-cucumber
     SUBDIR += rubygem-cucumber-core
     SUBDIR += rubygem-cucumber-cucumber-expressions
-    SUBDIR += rubygem-cucumber-expressions
-    SUBDIR += rubygem-cucumber-expressions6
     SUBDIR += rubygem-cucumber-formatter-dots
     SUBDIR += rubygem-cucumber-messages
     SUBDIR += rubygem-cucumber-messages4
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
-    SUBDIR += rubygem-cucumber-tag_expressions1
     SUBDIR += rubygem-cucumber-wire
     SUBDIR += rubygem-curses
     SUBDIR += rubygem-cyoi
@@ -6000,7 +5998,10 @@
     SUBDIR += rubygem-flexmock
     SUBDIR += rubygem-flipper
     SUBDIR += rubygem-flipper-active_support_cache_store
+    SUBDIR += rubygem-flipper-active_support_cache_store017
     SUBDIR += rubygem-flipper-ui
+    SUBDIR += rubygem-flipper-ui017
+    SUBDIR += rubygem-flipper017
     SUBDIR += rubygem-fluent-logger
     SUBDIR += rubygem-fog
     SUBDIR += rubygem-fog-core

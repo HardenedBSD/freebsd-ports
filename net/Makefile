@@ -60,7 +60,6 @@
     SUBDIR += bird2
     SUBDIR += bittwist
     SUBDIR += bmon
-    SUBDIR += bnxt-kmod
     SUBDIR += boinc-client
     SUBDIR += boinc_curses
     SUBDIR += bosh-bootloader
@@ -1344,6 +1343,7 @@
     SUBDIR += rubygem-xmlrpc
     SUBDIR += rude
     SUBDIR += ryu
+    SUBDIR += sacc
     SUBDIR += samba410
     SUBDIR += samba411
     SUBDIR += samplicator
