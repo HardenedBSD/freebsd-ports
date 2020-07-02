@@ -12,6 +12,7 @@ PATCHFILES+=	1adf640d3725.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/1703
 PATCHFILES+=	e6085ea35f0b.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/4208
 PATCHFILES+=	3b1683a15261.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/4208
 PATCHFILES+=	dda90ce1c249.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/4209
+PATCHFILES+=	b1b1ed7597cb.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/4221
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Nintendo Switch emulator/debugger
@@ -53,10 +54,8 @@ GH_TUPLE=	yuzu-emu:unicorn:1.0.1-153-g73f45735:unicorn/externals/unicorn \
 		kinetiknz:cubeb:cubeb-0.2-1194-g616d773:cubeb/externals/cubeb \
 		svn2github:inih:603729d:inih/externals/inih/inih
 
-USES=		cmake compiler:c++17-lang iconv localbase:ldflags \
-		python:build sdl ssl
+USES=		cmake compiler:c++17-lang localbase:ldflags python:build sdl ssl
 USE_SDL=	sdl2
-CXXFLAGS+=	-Wno-narrowing # https://github.com/yuzu-emu/yuzu/issues/3407
 LDFLAGS+=	-Wl,--as-needed # Qt5Network
 TEST_TARGET=	test
 
@@ -85,7 +84,7 @@ SDL_PLIST_FILES=bin/${PORTNAME}-cmd \
 		bin/${PORTNAME}-tester
 
 QT5_USES=	desktop-file-utils qt:5 shared-mime-info
-QT5_USE=	QT=qmake_build,buildtools_build,concurrent_build,core,gui,opengl,webengine,widgets
+QT5_USE=	QT=qmake_build,buildtools_build,concurrent_build,core,gui,webengine,widgets
 QT5_CMAKE_BOOL=	ENABLE_QT YUZU_USE_QT_WEB_ENGINE
 QT5_PLIST_FILES=bin/${PORTNAME} \
 		share/applications/${PORTNAME}.desktop \
