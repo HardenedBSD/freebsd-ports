@@ -33,8 +33,8 @@ USE_MOZILLA=	-sqlite
 
 USES=		tar:xz
 
-MPROTECT_DISABLE=	libexec/firefox
-MPROTECT_DISABLE+=	libexec/plugin-container
+MPROTECT_DISABLE=	lib/firefox/firefox
+MPROTECT_DISABLE+=	lib/firefox/plugin-container
 
 FIREFOX_ICON=		${MOZILLA}.png
 FIREFOX_ICON_SRC=	${PREFIX}/lib/${MOZILLA}/browser/chrome/icons/default/default48.png
