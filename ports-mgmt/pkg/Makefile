@@ -2,6 +2,7 @@
 
 PORTNAME=	pkg
 DISTVERSION=	1.14.6
+PORTREVISION=	1
 _PKG_VERSION=	${DISTVERSION}
 CATEGORIES=	ports-mgmt
 #MASTER_SITES=	\
@@ -14,8 +15,13 @@ COMMENT=	Package manager
 
 LICENSE=	BSD2CLAUSE
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	freebsd
+USE_GITLAB=	gitea
+GL_SITE=	https://git-01.md.hardenedbsd.org
+GL_ACCOUNT=	HardenedBSD
+GL_PROJECT=	pkg
+GL_COMMIT=	962ad56d8fbc89edfe87a1a2fde7c0fb5ace15de
+
+WRKSRC=		${WRKDIR}/pkg
 
 USE_LDCONFIG=	${PREFIX}/lib/compat/pkg
 HAS_CONFIGURE=	yes
@@ -89,10 +95,6 @@ PKG_DEPENDS=
 .if !defined(CROSS_TOOLCHAIN)
 PKG_BIN=	${WRKSRC}/src/pkg-static
 .endif
-
-post-patch:
-	${REINPLACE_CMD} -e "s|-llzma|${LIBLZMA_LIBS}|g" ${WRKSRC}/auto.def \
-		${WRKSRC}/src/Makefile.autosetup ${WRKSRC}/tests/Makefile.autosetup
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/compat/pkg
