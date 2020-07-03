@@ -33,6 +33,9 @@ USE_MOZILLA=	-sqlite
 
 USES=		tar:xz
 
+MPROTECT_DISABLE=	libexec/firefox
+MPROTECT_DISABLE+=	libexec/plugin-container
+
 FIREFOX_ICON=		${MOZILLA}.png
 FIREFOX_ICON_SRC=	${PREFIX}/lib/${MOZILLA}/browser/chrome/icons/default/default48.png
 FIREFOX_DESKTOP=	${MOZSRC}/taskcluster/docker/${MOZILLA}-snap/${MOZILLA}.desktop
