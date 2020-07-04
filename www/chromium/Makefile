@@ -138,6 +138,9 @@ GN_ARGS+=	google_api_key="AIzaSyBsp9n41JLW8jCokwn7vhoaMejDFRd1mp8" \
 
 USE_HARDENING=	relro:off
 
+PAGEEXEC_DISABLE=	share/chromium/chrome
+MPROTECT_DISABLE=	share/chromium/chrome
+
 .if !defined(GN_ONLY)
 SUB_FILES=	chromium-browser.desktop chrome pkg-message
 SUB_LIST+=	COMMENT="${COMMENT}"
