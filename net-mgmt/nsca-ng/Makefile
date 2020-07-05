@@ -17,15 +17,9 @@ LIB_DEPENDS=	libev.so:devel/libev
 LIB_DEPENDS+=	libconfuse.so:devel/libconfuse
 .endif
 
-<<<<<<< HEAD
-CONFLICTS?=	nsca-2.* nsca27-2.*
-
 USE_HARDENING=	pie:off relro:off
 
-USES=		ssl
-=======
 USES=		ssl autoreconf
->>>>>>> upstream/master
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var/spool/nagios
 CPPFLAGS+=	-I${OPENSSLINC}
