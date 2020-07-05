@@ -1910,6 +1910,11 @@
     SUBDIR += p5-Commands-Guarded
     SUBDIR += p5-CommitBit
     SUBDIR += p5-Compiler-Lexer
+    SUBDIR += p5-Complete-Common
+    SUBDIR += p5-Complete-Path
+    SUBDIR += p5-Complete-Sah
+    SUBDIR += p5-Complete-Sequence
+    SUBDIR += p5-Complete-Util
     SUBDIR += p5-Config-AST
     SUBDIR += p5-Config-Any
     SUBDIR += p5-Config-ApacheFormat
@@ -2947,6 +2952,7 @@
     SUBDIR += p5-Package-MoreUtil
     SUBDIR += p5-Package-Stash
     SUBDIR += p5-Package-Stash-XS
+    SUBDIR += p5-Package-Util-Lite
     SUBDIR += p5-Package-Variant
     SUBDIR += p5-PadWalker
     SUBDIR += p5-Parallel-Async
@@ -3165,6 +3171,7 @@
     SUBDIR += p5-Sort-Key-DateTime
     SUBDIR += p5-Sort-Key-Top
     SUBDIR += p5-Sort-Maker
+    SUBDIR += p5-Sort-Sub
     SUBDIR += p5-Sort-Tree
     SUBDIR += p5-Sort-Versions
     SUBDIR += p5-Specio
@@ -3838,6 +3845,7 @@
     SUBDIR += pear-pdepend-staticReflection
     SUBDIR += pear-phing
     SUBDIR += pecl-APCu
+    SUBDIR += pecl-APCu_bc
     SUBDIR += pecl-ast
     SUBDIR += pecl-dio
     SUBDIR += pecl-ds
