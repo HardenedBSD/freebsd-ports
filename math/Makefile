@@ -749,6 +749,7 @@
     SUBDIR += py-fastdtw
     SUBDIR += py-ffc
     SUBDIR += py-fiat
+    SUBDIR += py-flax
     SUBDIR += py-fpconst
     SUBDIR += py-fpylll
     SUBDIR += py-gau2grid
@@ -762,6 +763,7 @@
     SUBDIR += py-hdbscan
     SUBDIR += py-hdmedians
     SUBDIR += py-intspan
+    SUBDIR += py-jax
     SUBDIR += py-keras
     SUBDIR += py-keras-applications
     SUBDIR += py-keras-preprocessing
@@ -781,6 +783,7 @@
     SUBDIR += py-numexpr
     SUBDIR += py-numpy
     SUBDIR += py-nzmath
+    SUBDIR += py-opt-einsum
     SUBDIR += py-osqp
     SUBDIR += py-pandas
     SUBDIR += py-pandas-datareader
