@@ -519,6 +519,7 @@
     SUBDIR += p5-HTML-FormatText-WithLinks
     SUBDIR += p5-HTML-FormatText-WithLinks-AndTables
     SUBDIR += p5-HTML-Fraction
+    SUBDIR += p5-HTML-FromANSI-Tiny
     SUBDIR += p5-HTML-HTML5-Entities
     SUBDIR += p5-HTML-HTML5-Parser
     SUBDIR += p5-HTML-HTMLDoc
@@ -628,6 +629,7 @@
     SUBDIR += p5-PPIx-QuoteLike
     SUBDIR += p5-PPIx-Regexp
     SUBDIR += p5-PPIx-Utilities
+    SUBDIR += p5-Parse-ANSIColor-Tiny
     SUBDIR += p5-Parse-BooleanLogic
     SUBDIR += p5-Parse-CSV
     SUBDIR += p5-Parse-FixedLength
@@ -777,6 +779,7 @@
     SUBDIR += p5-Template-Magic
     SUBDIR += p5-Template-Plugin-Autoformat
     SUBDIR += p5-Template-Plugin-CSV
+    SUBDIR += p5-Template-Plugin-Data-Printer
     SUBDIR += p5-Template-Plugin-Filter-Minify-CSS
     SUBDIR += p5-Template-Plugin-Filter-Minify-CSS-XS
     SUBDIR += p5-Template-Plugin-Filter-Minify-JavaScript
