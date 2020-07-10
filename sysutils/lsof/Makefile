@@ -35,6 +35,7 @@ AIM_CFLAGS=	-DAIM
 BOOKE_DESC=	Set for BOOKE hardware
 BOOKE_CFLAGS=	-DBOOKE
 
+CFLAGS+=	-fcommon
 CFLAGS_powerpc=	-DAIM
 CFLAGS_powerpcspe=	-DBOOKE
 
