@@ -25,6 +25,7 @@
     SUBDIR += arangodb33
     SUBDIR += arrow
     SUBDIR += ateam_mysql_ldap_auth
+    SUBDIR += ateam_mysql57_ldap_auth
     SUBDIR += autobackupmysql
     SUBDIR += automysqlbackup
     SUBDIR += bbdb
@@ -178,6 +179,8 @@
     SUBDIR += mariadb103-server
     SUBDIR += mariadb104-client
     SUBDIR += mariadb104-server
+    SUBDIR += mariadb105-client
+    SUBDIR += mariadb105-server
     SUBDIR += mdbtools
     SUBDIR += mdcached
     SUBDIR += memcached
