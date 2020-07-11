@@ -15,13 +15,8 @@ LICENSE_NAME=	RADVD License
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-<<<<<<< HEAD
-LIB_DEPENDS=	libdaemon.so:devel/libdaemon
-
 USE_HARDENING=	safestack
 
-=======
->>>>>>> upstream/master
 GNU_CONFIGURE=	yes
 USES=		gmake pkgconfig
 CONFIGURE_ARGS=	--program-transform-name=
