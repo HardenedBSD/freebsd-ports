@@ -1159,6 +1159,7 @@
     SUBDIR += rdapper
     SUBDIR += rdesktop
     SUBDIR += rdist6
+    SUBDIR += realtek-re-kmod
     SUBDIR += reaver
     SUBDIR += recvnet
     SUBDIR += redir
