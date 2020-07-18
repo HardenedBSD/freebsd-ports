@@ -1,30 +1,26 @@
 # $FreeBSD$
 
-PORTNAME=	wayvnc
-DISTVERSIONPREFIX=	v
-DISTVERSION=	0.1.2-145
-DISTVERSIONSUFFIX=	-gbed4b72
+PORTNAME=	wlvncc
+PORTVERSION=	s20200714
 CATEGORIES=	net
 
 MAINTAINER=	jbeich@FreeBSD.org
-COMMENT=	VNC server for wlroots-based compositors
+COMMENT=	Wayland Native VNC Client
 
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	evdev-proto>0:devel/evdev-proto
 LIB_DEPENDS=	libaml.so:devel/aml \
-		libdrm.so:graphics/libdrm \
 		libwayland-client.so:graphics/wayland \
-		libneatvnc.so:net/neatvnc \
+		libvncclient.so:net/libvncserver \
 		libxkbcommon.so:x11/libxkbcommon
 
 USES=		compiler:c11 meson pkgconfig xorg
 USE_GITHUB=	yes
 USE_XORG=	pixman
-USE_GL=		gbm
-USE_LDCONFIG=	yes
 GH_ACCOUNT=	any1
+GH_TAGNAME=	e7a1460
 PLIST_FILES=	bin/${PORTNAME}
 
 .include <bsd.port.mk>

@@ -1520,6 +1520,7 @@
     SUBDIR += wireshark
     SUBDIR += wireshark-lite
     SUBDIR += wlan2eth
+    SUBDIR += wlvncc
     SUBDIR += wmnd
     SUBDIR += wmnet
     SUBDIR += wmping
