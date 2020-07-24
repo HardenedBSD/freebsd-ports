@@ -808,6 +808,7 @@
     SUBDIR += p5-HTML-GenToc
     SUBDIR += p5-HTML-GenerateUtil
     SUBDIR += p5-HTML-GoogleMaps
+    SUBDIR += p5-HTML-Gumbo
     SUBDIR += p5-HTML-Highlight
     SUBDIR += p5-HTML-LinkExtractor
     SUBDIR += p5-HTML-LinkList
@@ -903,6 +904,7 @@
     SUBDIR += p5-HTTP-Entity-Parser
     SUBDIR += p5-HTTP-Exception
     SUBDIR += p5-HTTP-HeaderParser-XS
+    SUBDIR += p5-HTTP-Headers-ActionPack
     SUBDIR += p5-HTTP-Headers-Fast
     SUBDIR += p5-HTTP-Link-Parser
     SUBDIR += p5-HTTP-Lite
@@ -1258,6 +1260,7 @@
     SUBDIR += p5-WWW-Yandex-TIC
     SUBDIR += p5-WWW-iTunesConnect
     SUBDIR += p5-Web-Query
+    SUBDIR += p5-Web-Machine
     SUBDIR += p5-Web-Scraper
     SUBDIR += p5-Web-Scraper-Config
     SUBDIR += p5-Web-Simple
