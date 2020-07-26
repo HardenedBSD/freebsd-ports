@@ -14,30 +14,14 @@ COMMENT=	Memory debugging and profiling tool
 
 LICENSE=	GPLv2
 
-ONLY_FOR_ARCHS=	amd64 i386
-
-<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
 
-OPTIONS_DEFINE=		DOCS MANPAGES MPI
-OPTIONS_DEFINE_amd64=	32BIT
-OPTIONS_DEFAULT=	MANPAGES
-.if exists(${LIB32_PATH})
-OPTIONS_DEFAULT_amd64=	32BIT
-.endif
-32BIT_DESC=	Enable debugging of 32-bit programs (requires lib32)
-MPI_DESC=	Enable build of MPI wrappers
+ONLY_FOR_ARCHS=	amd64 i386
 
-DOCS_BUILD_DEPENDS=    docbook-xsl>=0:textproc/docbook-xsl \
-                       xsltproc:textproc/libxslt
-MANPAGES_BUILD_DEPENDS=        docbook-xsl>=0:textproc/docbook-xsl \
-                       xsltproc:textproc/libxslt
-=======
 DOCS_BUILD_DEPENDS=	docbook-xsl>=0:textproc/docbook-xsl \
 		xsltproc:textproc/libxslt
 MANPAGES_BUILD_DEPENDS=	docbook-xsl>=0:textproc/docbook-xsl \
 		xsltproc:textproc/libxslt
->>>>>>> freebsd/master
 MPI_LIB_DEPENDS=	libmpich.so:net/mpich
 
 USES=		pathfix pkgconfig gmake perl5 shebangfix autoreconf
