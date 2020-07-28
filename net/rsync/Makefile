@@ -16,12 +16,10 @@ COMMENT=	Network file distribution/synchronization utility
 
 LICENSE=	GPLv3
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
-=======
+
 LIB_DEPENDS=    libxxhash.so:devel/xxhash \
 		libzstd.so:archivers/zstd
->>>>>>> upstream/master
 
 USES=		cpe shebangfix
 SHEBANG_FILES=	support/rrsync
