@@ -1,27 +1,29 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
 # $FreeBSD$
 
-PORTNAME=	notes
-PORTVERSION=	3.6.1
-DISTVERSIONPREFIX=  v
+PORTNAME=	appointments
+PORTVERSION=	1.6.6
 CATEGORIES=	www
-MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
+MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/raw/${GH_TAGNAME}/build/artifacts/appstore/
 PKGNAMEPREFIX=	nextcloud-
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}/${DISTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}
 
 MAINTAINER=	brnrd@FreeBSD.org
-COMMENT=	Notes app for Nextcloud
+COMMENT=	Appointments app for Nextcloud
 
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	nextcloud${PHP_PKGNAMESUFFIX}>=16:www/nextcloud@${PHP_FLAVOR}
+RUN_DEPENDS=	nextcloud${PHP_PKGNAMESUFFIX}>=17:www/nextcloud@${PHP_FLAVOR}
 
 USES=		php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
+
+GH_ACCOUNT=	SergeyMosin
+GH_TAGNAME=	54ecd01b
 
 NEXTCLOUD_USERNAME?=	${WWWOWN}
 NEXTCLOUD_GROUPNAME?=	${WWWGRP}

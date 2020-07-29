@@ -61,6 +61,7 @@
  43.219564,	76.851597,	"bp"				# Almaty, Kazakhstan
  35.72689,	51.54698,	"mmokhi"			# Tehran, Iran
  51.33,		46.00,		"novel"				# Saratov, Russia
+ 48.676433,	44.473968,	"arrowd"			# Volgograd, Russia
  48.805,	44.586,		"den"				# Volgograd, Russia
  55.740978,	37.830851,	"sem"				# Moscow, Russia
  55.7,		37.8,		"az"				# Moscow, Russia
@@ -121,7 +122,7 @@
  48.108055,	11.635277,	"olli"				# Munich, Germany
  55.48821,	11.62152,	"pho"				# Soroe, Denmark
  48.109752,	11.572466,	"barner"			# Munich, Germany
- 55.406124,	11.3397291,	"phk"				# Slagelse, Denmark
+ 55.4064909,	11.3368464,	"phk"				# Slagelse, Denmark
  48.095,	11.296,		"harti"				# Gilching, Germany
  48.16,		11.26,		"rse"				# Dachau, Germany
  43.79142,	11.22991,	"madpilot"			# Florence, Italy
@@ -134,6 +135,7 @@
  53.56,		10.02,		"cracauer"			# Hamburg, Germany
  53.64,		9.84,		"hm"		align=left	# Rellingen, Germany
  48.336389,	9.836389,	"helbig"			# Waiblingen, Germany
+ 57.196092,	9.673923,	"debdrup"			# Kaas, Denmark
  49.00,		9.5,		"schweikh"			# Weinstadt, Germany
  51.20,		9.20,		"dinoex"			# Habichtswald, Germany
  45.467,	9.200,		"piso"				# Milano, Italy
@@ -196,9 +198,8 @@
  48.912,	2.256,		"mich"		align=left	# La Garenne-Colombes, France
  48.818344,	2.245696,	"roberto"	align=left	# Meudon, France
  48.836,	2.242,		"blackend"	align=left	# Boulogne-Billancourt, France
- 48.844,	2.213,		"bapt"				# (CORE) Saint Cloud, France
+ 48.79964,	2.35058 	"bapt"				# (CORE) Villejuif, France
  46.75984,	1.738281,	"stephane"			# Orleans, France
- 51.33046,	1.41088,	"matthew"			# Ramsgate, UK
  51.29870,	1.07005,	"tdb"				# Canterbury, United Kingdom
  52.18,		0.19,		"markm"		align=left	# Cambridge, Cambs, UK
  52.20360,	0.14134,	"rsm"				# Cambridge, UK
@@ -213,6 +214,7 @@
  52.01,		-0.75,		"tom"		align=left	# Milton Keynes, UK
  51.461916,	-1.011833,	"jesper"			# Reading, United Kingdom
  53.955666,	-1.072605,	"gavin"				# (CORE) York, United Kingdom
+ 51.782616,     -1.373806	"matthew"			# Eynsham, UK
  52.635,	-1.135,		"hmp"				# Leicester, East Midlands, UK
  48.12,		-1.60,		"martymac"			# Cesson-Sevigne, France
  48.10927,	-1.61104,	"jadawin"			# Cesson-Sevigne, France
