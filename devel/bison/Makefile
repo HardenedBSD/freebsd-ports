@@ -16,14 +16,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	m4>=1.4.16,1:devel/m4
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
 
-OPTIONS_DEFINE=	DOCS EXAMPLES NLS
-OPTIONS_SUB=	yes
-
-=======
->>>>>>> upstream/master
 USES=		charsetfix compiler:c11 localbase makeinfo perl5 tar:xz
 USE_PERL5=	build
 
