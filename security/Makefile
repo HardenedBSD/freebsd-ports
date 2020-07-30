@@ -846,6 +846,7 @@
     SUBDIR += py-bcrypt
     SUBDIR += py-btchip-python
     SUBDIR += py-cerealizer
+    SUBDIR += py-cert-human
     SUBDIR += py-certbot
     SUBDIR += py-certbot-apache
     SUBDIR += py-certbot-dns-cloudflare
