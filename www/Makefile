@@ -2280,6 +2280,8 @@
     SUBDIR += uwsgi
     SUBDIR += uwsgitop
     SUBDIR += validator
+    SUBDIR += varnish-ip2location
+    SUBDIR += varnish-ip2proxy
     SUBDIR += varnish-libvmod-awsrest
     SUBDIR += varnish-libvmod-digest
     SUBDIR += varnish-libvmod-dynamic
