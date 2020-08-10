@@ -294,6 +294,7 @@
     SUBDIR += ec2-scripts
     SUBDIR += eclat
     SUBDIR += edid-decode
+    SUBDIR += edk2
     SUBDIR += eject
     SUBDIR += eksctl
     SUBDIR += endian
@@ -1205,6 +1206,7 @@
     SUBDIR += scterc
     SUBDIR += sd-agent
     SUBDIR += sdparm
+    SUBDIR += seatd
     SUBDIR += seatools
     SUBDIR += sec
     SUBDIR += sensu-go
