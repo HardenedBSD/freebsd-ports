@@ -75,7 +75,7 @@ PROFILE_SUB_LIST=	WITH_PROFILE="YES"
 PROFILE_SUB_LIST_OFF=	WITH_PROFILE="NO"
 
 GHC_VERSION?=		${GHC_VERSION_DEFAULT}
-GHC_VERSION_DEFAULT=	8.8.4
+GHC_VERSION_DEFAULT=	8.10.1
 GHC_VERSION_MAJOR=	${GHC_VERSION:S/./ /g:[1]}
 GHC_VERSION_MINOR=	${GHC_VERSION:S/./ /g:[2]}
 
@@ -106,6 +106,10 @@ LLVM_VERSION=		90
 
 .if ${ARCH} == powerpc64
 CONFIGURE_ARGS+=	--enable-dtrace=0
+.endif
+
+.if ${ARCH} == i386
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-libraries_ghc-prim_cbits_atomic.c
 .endif
 
 .if defined(PPC_ABI) && ${PPC_ABI} == ELFv1
@@ -236,8 +240,10 @@ post-patch:
 		s|%%AR%%|${AR}|; \
 		s|%%LD%%|${LD}|' \
 		${WRKSRC}/libraries/Cabal/Cabal/Distribution/Simple/Program/Builtin.hs
+.if ${GHC_VERSION_MAJOR} <= 8 && ${GHC_VERSION_MINOR} < 10
 	@${REINPLACE_CMD} -e 's/@SettingsLlcCommand@/llc${LLVM_VERSION}/' ${WRKSRC}/settings.in
 	@${REINPLACE_CMD} -e 's/@SettingsOptCommand@/opt${LLVM_VERSION}/' ${WRKSRC}/settings.in
+.endif
 
 .if empty(PORT_OPTIONS:MBOOT)
 	@${REINPLACE_CMD} -e '/^mandir/d' ${BOOT_DIR}/mk/build.mk
