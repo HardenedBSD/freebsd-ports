@@ -179,6 +179,7 @@
     SUBDIR += astyle
     SUBDIR += asyncplusplus
     SUBDIR += atf
+    SUBDIR += athens
     SUBDIR += atlas
     SUBDIR += atlas-devel
     SUBDIR += aunit
@@ -5055,6 +5056,7 @@
     SUBDIR += py-spyder
     SUBDIR += py-srsly
     SUBDIR += py-stackexchange
+    SUBDIR += py-statgrab
     SUBDIR += py-statsd
     SUBDIR += py-stdnum
     SUBDIR += py-stevedore
@@ -5145,6 +5147,7 @@
     SUBDIR += py-update_checker
     SUBDIR += py-urlimport
     SUBDIR += py-urwid
+    SUBDIR += py-urwid-readline
     SUBDIR += py-urwidtrees
     SUBDIR += py-user_agents
     SUBDIR += py-userpath
