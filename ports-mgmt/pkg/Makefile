@@ -1,12 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	pkg
-<<<<<<< HEAD
-DISTVERSION=	1.14.6
-PORTREVISION=	1
-=======
 DISTVERSION=	1.14.7
->>>>>>> upstream/master
 _PKG_VERSION=	${DISTVERSION}
 CATEGORIES=	ports-mgmt
 #MASTER_SITES=	\
@@ -23,7 +18,7 @@ USE_GITLAB=	gitea
 GL_SITE=	https://git-01.md.hardenedbsd.org
 GL_ACCOUNT=	HardenedBSD
 GL_PROJECT=	pkg
-GL_COMMIT=	962ad56d8fbc89edfe87a1a2fde7c0fb5ace15de
+GL_COMMIT=	682e423e30c4037074642ba6473739bc4172bf2c
 
 WRKSRC=		${WRKDIR}/pkg
 
