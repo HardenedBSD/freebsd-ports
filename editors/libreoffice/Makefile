@@ -119,14 +119,10 @@ USES=		autoreconf:build bison compiler:c++17-lang cpe desktop-file-utils \
 		gettext-runtime gl gmake gnome jpeg mysql:client perl5 pkgconfig \
 		pkgconfig python shebangfix shared-mime-info ssl tar:xz xorg
 
-<<<<<<< HEAD
 PAGEEXEC_DISABLE=	lib/libreoffice/program/soffice.bin
 MPROTECT_DISABLE=	lib/libreoffice/program/soffice.bin
 
-OPTIONS_DEFINE=	CUPS DOCS GNOME GTK3 JAVA KF5 MMEDIA PGSQL QT5 SDK TEST WEBDAV
-=======
 OPTIONS_DEFINE=	COINMP CUPS DOCS GNOME GTK3 JAVA KF5 MMEDIA PGSQL QT5 SDK TEST WEBDAV
->>>>>>> upstream/master
 OPTIONS_DEFAULT=	CUPS MMEDIA
 OPTIONS_DEFAULT_FreeBSD_12=	QT5
 OPTIONS_DEFAULT_FreeBSD_13=	QT5
