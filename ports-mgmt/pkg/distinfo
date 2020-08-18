@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 TIMESTAMP = 1593776872
 SHA256 (HardenedBSD-pkg-962ad56d8fbc89edfe87a1a2fde7c0fb5ace15de_GL0.tar.gz) = ba5f05e7b4fedc18e16a334432859bcd098379faf68025544cd3f63b05c94c16
 SIZE (HardenedBSD-pkg-962ad56d8fbc89edfe87a1a2fde7c0fb5ace15de_GL0.tar.gz) = 3407565
+=======
+TIMESTAMP = 1597738923
+SHA256 (freebsd-pkg-1.14.7_GH0.tar.gz) = 5d1089c8944928ffc85fefe5fcf7204a9e8b72e988f34eb641aba26f38ef48a2
+SIZE (freebsd-pkg-1.14.7_GH0.tar.gz) = 3406609
+>>>>>>> upstream/master
