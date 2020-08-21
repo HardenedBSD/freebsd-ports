@@ -296,6 +296,7 @@
     SUBDIR += libkpass
     SUBDIR += libksba
     SUBDIR += libmcrypt
+    SUBDIR += libnitrokey
     SUBDIR += libntlm
     SUBDIR += libotr
     SUBDIR += libotr3
@@ -373,6 +374,7 @@
     SUBDIR += ngrok
     SUBDIR += nikto
     SUBDIR += nist-kat
+    SUBDIR += nitrokey-app
     SUBDIR += nmap
     SUBDIR += nss
     SUBDIR += nss_compat_ossl
