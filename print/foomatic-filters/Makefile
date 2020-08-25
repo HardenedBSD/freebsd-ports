@@ -13,6 +13,8 @@ COMMENT=	Foomatic wrapper scripts
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USE_HARDENING=	safestack
+
 USES=		autoreconf ghostscript perl5 pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_path_A2PS=${LOCALBASE}/bin/a2ps \
@@ -30,20 +32,6 @@ CONFIGURE_ENV=	ac_cv_path_A2PS=${LOCALBASE}/bin/a2ps \
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-<<<<<<< HEAD
-USE_HARDENING=	safestack
-
-OPTIONS_DEFINE=			A2PS DBUS CUPS_IMAGE MPAGE
-OPTIONS_RADIO=			ENSCRIPT
-OPTIONS_RADIO_ENSCRIPT=		ENSCRIPT_A4 ENSCRIPT_LETTER ENSCRIPT_LETTERDJ
-OPTIONS_DEFAULT=		A2PS CUPS_IMAGE DBUS ENSCRIPT_A4 MPAGE
-CUPS_IMAGE_DESC=		Install cups image utilities
-A2PS_DESC=			Install a2ps convertor
-ENSCRIPT_A4_DESC=		Install enscript convertor (A4)
-ENSCRIPT_LETTER_DESC=		Install enscript convertor (letter)
-ENSCRIPT_LETTERDJ_DESC=		Install enscript convertor (letterdj)
-MPAGE_DESC=			Print multiple pages per sheet of paper
-=======
 CONFLICTS=	cups-filters-[0-9]*
 
 OPTIONS_DEFINE=		A2PS CUPS_IMAGE DBUS MPAGE
@@ -57,7 +45,6 @@ ENSCRIPT_A4_DESC=	Install enscript convertor (A4)
 ENSCRIPT_LETTERDJ_DESC=	Install enscript convertor (letterdj)
 ENSCRIPT_LETTER_DESC=	Install enscript convertor (letter)
 MPAGE_DESC=		Print multiple pages per sheet of paper
->>>>>>> freebsd/master
 
 A2PS_RUN_DEPENDS=		a2ps:print/a2ps
 CUPS_IMAGE_LIB_DEPENDS=		libcupsimage.so:print/cups
