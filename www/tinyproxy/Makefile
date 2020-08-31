@@ -13,18 +13,9 @@ COMMENT=	Small, efficient HTTP proxy server
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
 
-OPTIONS_DEFINE=	REVERSE TRANSPARENT XHEADER
-REVERSE_DESC=		Reverse proxy support
-TRANSPARENT_DESC=	Transparent proxy support
-XHEADER_DESC=		X-Tinyproxy header
-
-USES=		autoreconf gmake
-=======
 USES=		gmake tar:xz
->>>>>>> freebsd/master
 
 CONFIGURE_ARGS=	--bindir=${PREFIX}/sbin \
 		--program-transform-name=""
