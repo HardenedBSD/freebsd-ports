@@ -40,6 +40,8 @@
     SUBDIR += android-file-transfer-qt5
     SUBDIR += angrysearch
     SUBDIR += ansible
+    SUBDIR += ansible-iocage
+    SUBDIR += ansible-kld
     SUBDIR += ansible-sysrc
     SUBDIR += ansible27
     SUBDIR += ansible28
@@ -500,6 +502,7 @@
     SUBDIR += intel-pcm
     SUBDIR += intel-pcm-devel
     SUBDIR += intel-undervolt
+    SUBDIR += inxi
     SUBDIR += ioc
     SUBDIR += iocage
     SUBDIR += iocage-devel
