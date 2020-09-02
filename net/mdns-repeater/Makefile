@@ -10,12 +10,10 @@ COMMENT=	Multicast DNS repeater to re-broadcast mDNS packets across interfaces
 
 LICENSE=	GPLv2
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
-=======
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	kennylevinsen
->>>>>>> upstream/master
 
 USE_RC_SUBR=	mdns-repeater
 
