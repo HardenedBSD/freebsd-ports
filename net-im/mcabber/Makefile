@@ -2,12 +2,11 @@
 # $FreeBSD$
 
 PORTNAME=	mcabber
-PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTVERSION=	1.1.1
 CATEGORIES=	net-im
 MASTER_SITES=	http://www.lilotux.net/~mikael/mcabber/files/
 
-MAINTAINER=	amdmi3@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small Jabber console client
 
 LICENSE=	GPLv2+
@@ -25,7 +24,12 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-hgcset
 INSTALL_TARGET=	install-strip
 
+<<<<<<< HEAD
 USE_HARDENING=	cfi safestack
+=======
+PORTDATA=	*
+PORTEXAMPLES=	*
+>>>>>>> freebsd/master
 
 OPTIONS_DEFINE=		EXAMPLES GPGME OTR IDN
 OPTIONS_DEFAULT=	IDN
