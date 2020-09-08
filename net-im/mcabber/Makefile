@@ -12,6 +12,8 @@ COMMENT=	Small Jabber console client
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USE_HARDENING=	cfi safestack
+
 # it picks libcharset from converters/libiconv installed by glib,
 # so provide an explicit dependency
 LIB_DEPENDS=	libloudmouth-1.so:net-im/loudmouth \
@@ -24,12 +26,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-hgcset
 INSTALL_TARGET=	install-strip
 
-<<<<<<< HEAD
-USE_HARDENING=	cfi safestack
-=======
 PORTDATA=	*
 PORTEXAMPLES=	*
->>>>>>> freebsd/master
 
 OPTIONS_DEFINE=		EXAMPLES GPGME OTR IDN
 OPTIONS_DEFAULT=	IDN
