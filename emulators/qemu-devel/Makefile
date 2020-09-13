@@ -12,14 +12,10 @@ COMMENT=	QEMU CPU Emulator - development version
 
 LICENSE=	GPLv2
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off
 
-ONLY_FOR_ARCHS=	amd64 i386 powerpc powerpc64
-=======
 ONLY_FOR_ARCHS=	amd64 powerpc powerpc64
 IGNORE_FreeBSD_11=	Unable to produce Position Independent Code
->>>>>>> upstream/master
 
 LIB_DEPENDS=	libnettle.so:security/nettle \
 		libfontconfig.so:x11-fonts/fontconfig \
