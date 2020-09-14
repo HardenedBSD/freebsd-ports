@@ -12,11 +12,9 @@ COMMENT=	Menu based USENET newsreader
 
 BROKEN_aarch64=	Fails to link: missing sbrk
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off
-=======
+
 SUB_FILES=	pkg-message
->>>>>>> upstream/master
 
 USES=		tar:Z
 MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS} -Iconf -fcommon" LDFLAGS="${LDFLAGS} -s"
