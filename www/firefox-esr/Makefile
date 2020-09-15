@@ -13,17 +13,9 @@ DISTFILES=	${DISTNAME}esr.source${EXTRACT_SUFX}
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Web browser based on the browser portion of Mozilla
 
-<<<<<<< HEAD
-USE_HARDENING=	pie:off
-
-BUILD_DEPENDS=	nspr>=4.21:devel/nspr \
-		nss>=3.52.1:security/nss \
-		icu>=63.1,1:devel/icu \
-=======
 BUILD_DEPENDS=	nspr>=4.26:devel/nspr \
 		nss>=3.56:security/nss \
 		icu>=67.1,1:devel/icu \
->>>>>>> upstream/master
 		libevent>=2.1.8:devel/libevent \
 		harfbuzz>=2.6.6:print/harfbuzz \
 		graphite2>=1.3.14:graphics/graphite2 \
