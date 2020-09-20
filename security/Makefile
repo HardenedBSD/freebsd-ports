@@ -975,6 +975,7 @@
     SUBDIR += py-scramp
     SUBDIR += py-scrypt
     SUBDIR += py-securesystemslib
+    SUBDIR += py-sequoia
     SUBDIR += py-service_identity
     SUBDIR += py-signedjson
     SUBDIR += py-social-auth-core
@@ -1155,6 +1156,7 @@
     SUBDIR += sectok
     SUBDIR += secure_delete
     SUBDIR += sedutil
+    SUBDIR += sequoia
     SUBDIR += setaudit
     SUBDIR += sha
     SUBDIR += sha1collisiondetection
