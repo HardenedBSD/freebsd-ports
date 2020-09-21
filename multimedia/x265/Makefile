@@ -12,15 +12,11 @@ COMMENT=	H.265/High Efficiency Video Coding (HEVC) format
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC:H}/COPYING
 
-USES=		cmake compiler:c++14-lang pathfix dos2unix
-
-<<<<<<< HEAD
 USE_HARDENING=	pie:off
 
-USES=		cmake compiler:c++14-lang pathfix
-=======
+USES=		cmake compiler:c++14-lang pathfix dos2unix
+
 BB_TAG=	25b2c07035ff	# Top of the Release_3.4 branch at this time
->>>>>>> freebsd/master
 
 OPTIONS_DEFINE=		DEBUG OPTIMIZED_FLAGS VMAF
 OPTIONS_DEFAULT=	OPTIMIZED_FLAGS HI8P HI10P HI12P
