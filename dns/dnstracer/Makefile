@@ -15,13 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USES=		perl5 tar:bz2
 USE_PERL5=	build
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
 
-=======
 MAKE_ARGS=	VERSION="${PORTVERSION}"
 WRKSRC=		${WRKDIR}/${PORTNAME}
->>>>>>> upstream/master
 PLIST_FILES=	bin/dnstracer \
 		share/man/man8/dnstracer.8.gz
 
