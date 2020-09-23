@@ -14,18 +14,13 @@ PATCHFILES=	15.patch:-p1:pr \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Yet Another CRF toolkit
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off
 
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
-=======
 LICENSE=	BSD3CLAUSE LGPL21+
 LICENSE_COMB=	dual
 LICENS_BSD3CLAUSE=	${WRKSRC}/BSD
 LICENS_LGPLv21+ =	${WRKSRC}/LGPL
 
->>>>>>> freebsd/master
 USES=		libtool
 USE_GITHUB=	yes
 GH_ACCOUNT=	taku910
