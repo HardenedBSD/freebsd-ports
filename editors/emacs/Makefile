@@ -232,7 +232,7 @@ XWIDGETS_CONFIGURE_WITH=	xwidgets
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} == powerpc64
+.if ${ARCH:Mpowerpc*}
 USE_GCC=	any
 .endif
 
