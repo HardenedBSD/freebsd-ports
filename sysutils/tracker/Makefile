@@ -20,17 +20,11 @@ LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid \
 
 PORTSCOUT=	limitw:1,even
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
 
-USES=		compiler:c++11-lib gettext gmake gnome libtool localbase \
-		pathfix pkgconfig python:3.4+,build shebangfix sqlite tar:xz
-USE_GNOME=	glib20 intltool introspection:build libxml2 
-=======
 USES=		compiler:c++11-lib gettext gnome localbase:ldflags meson \
 		pkgconfig python:3.4+,build sqlite tar:xz
 USE_GNOME=	glib20 introspection:build libxml2
->>>>>>> upstream/master
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 MESON_ARGS=	-Ddocs=false \
