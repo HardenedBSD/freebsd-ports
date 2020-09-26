@@ -253,6 +253,7 @@
     SUBDIR += disktype
     SUBDIR += dmg2img
     SUBDIR += dmidecode
+    SUBDIR += dnf
     SUBDIR += docker
     SUBDIR += docker-compose
     SUBDIR += docker-credential-pass
@@ -775,6 +776,7 @@
     SUBDIR += osinfo-db-tools
     SUBDIR += osquery
     SUBDIR += p5-App-RunCron
+    SUBDIR += p5-App-ZFSCurses
     SUBDIR += p5-BSD-Jail-Object
     SUBDIR += p5-BSD-Process
     SUBDIR += p5-BSD-Sysctl
