@@ -4278,6 +4278,7 @@
     SUBDIR += py-crashtest
     SUBDIR += py-crc32c
     SUBDIR += py-crcmod
+    SUBDIR += py-cson
     SUBDIR += py-csv23
     SUBDIR += py-ctags
     SUBDIR += py-curio
@@ -5042,6 +5043,7 @@
     SUBDIR += py-sortedcontainers
     SUBDIR += py-sourcemap
     SUBDIR += py-speaklater
+    SUBDIR += py-speg
     SUBDIR += py-spyder
     SUBDIR += py-srsly
     SUBDIR += py-stackexchange
