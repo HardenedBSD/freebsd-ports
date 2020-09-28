@@ -12,13 +12,9 @@ COMMENT=	Fast, scalable and extensible HTTP proxy server
 
 LICENSE=	APACHE20
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off
 
-ONLY_FOR_ARCHS=	amd64 powerpc64
-=======
 ONLY_FOR_ARCHS=	amd64 powerpc64 powerpc64le
->>>>>>> freebsd/master
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libhwloc.so:devel/hwloc \
