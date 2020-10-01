@@ -2,17 +2,17 @@
 # $FreeBSD$
 
 PORTNAME=	mediawiki
-PORTVERSION=	1.34.4
+PORTVERSION=	1.35.0
 CATEGORIES=	www
 MASTER_SITES=	http://releases.wikimedia.org/mediawiki/${PORTVERSION:R}/
-PKGNAMESUFFIX=	134${PHP_PKGNAMESUFFIX}
+PKGNAMESUFFIX=	135${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Wiki engine used by Wikipedia
 
 LICENSE=	GPLv2
 
-CONFLICTS=	mediawiki13[1-3]-[0-9]* mediawiki135-[0-9]*
+CONFLICTS=	mediawiki13[1-4]-[0-9]*
 
 USES=		php:flavors shebangfix
 SHEBANG_FILES=	maintenance/dev/*.sh \
