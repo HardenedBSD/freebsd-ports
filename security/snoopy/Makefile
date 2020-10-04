@@ -15,13 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	bash:shells/bash
 TEST_DEPENDS=	socat:net/socat
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
 
-OPTIONS_DEFINE=	DOCS
-=======
 USES=		autoreconf gmake libtool shebangfix
->>>>>>> upstream/master
 
 CONFIGURE_ARGS=	--disable-datasource-tid_kernel \
 		ac_cv_prog_SNOOPY_PROG_SOCAT_FOUND=yes
