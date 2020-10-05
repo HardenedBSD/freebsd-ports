@@ -1731,6 +1731,8 @@
     SUBDIR += p5-Benchmark-Timer
     SUBDIR += p5-Best
     SUBDIR += p5-Border-Style
+    SUBDIR += p5-BorderStyleBase
+    SUBDIR += p5-BorderStyles-Standard
     SUBDIR += p5-Brannigan
     SUBDIR += p5-Bread-Board
     SUBDIR += p5-Bread-Board-Declare
@@ -1894,6 +1896,7 @@
     SUBDIR += p5-Color-Theme-Role
     SUBDIR += p5-ColorThemeBase-Static
     SUBDIR += p5-ColorThemeUtil-ANSI
+    SUBDIR += p5-ColorThemes-Standard
     SUBDIR += p5-Commandable
     SUBDIR += p5-Commands-Guarded
     SUBDIR += p5-CommitBit
