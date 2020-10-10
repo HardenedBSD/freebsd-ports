@@ -4781,6 +4781,7 @@
     SUBDIR += py-ply
     SUBDIR += py-pockets
     SUBDIR += py-podcastparser
+    SUBDIR += py-poetry-core
     SUBDIR += py-polib
     SUBDIR += py-pooch
     SUBDIR += py-portalocker
@@ -6075,6 +6076,7 @@
     SUBDIR += rubygem-grape-path-helpers
     SUBDIR += rubygem-grape-route-helpers
     SUBDIR += rubygem-grape-swagger
+    SUBDIR += rubygem-grape140
     SUBDIR += rubygem-grape_logging
     SUBDIR += rubygem-graphiql-rails
     SUBDIR += rubygem-graphql
