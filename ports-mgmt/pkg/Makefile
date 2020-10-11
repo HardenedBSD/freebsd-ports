@@ -18,7 +18,7 @@ USE_GITLAB=	gitea
 GL_SITE=	https://git-01.md.hardenedbsd.org
 GL_ACCOUNT=	HardenedBSD
 GL_PROJECT=	pkg
-GL_COMMIT=	f54c8aae68b03a2f0a38390e2f8cf65c0887b7fc
+GL_COMMIT=	4130f228a564871590077747da5a3fa0d413a3cc
 
 WRKSRC=		${WRKDIR}/pkg
 
