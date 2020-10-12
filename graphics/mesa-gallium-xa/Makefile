@@ -1,12 +1,11 @@
 # Created by: johalun
 # $FreeBSD$
 
-PORTNAME=	libxatracker
+PORTNAME=	mesa-gallium-xa
 PORTVERSION=	${MESAVERSION}
-PORTREVISION=	5
 CATEGORIES=	graphics
 
-COMMENT=	Mesa XA state tracker
+COMMENT=	Mesa Gallium XA state tracker
 
 USES=		xorg
 USE_XORG=	xorgproto
@@ -20,25 +19,25 @@ ONLY_FOR_ARCHS_REASON=	Used only by VMWare supported architectures
 MESON_ARGS+=	-Ddri-drivers="" \
 		-Dgallium-drivers="svga" \
 		-Dvulkan-drivers="" \
-		-Dgallium-vdpau=false \
+		-Dplatforms="" \
+		-Dgallium-vdpau=disabled \
 		-Dgallium-omx=disabled \
-		-Dgallium-va=false \
+		-Dgallium-va=disabled \
 		-Dgallium-opencl=disabled \
-		-Dgallium-xvmc=false \
+		-Dgallium-xvmc=disabled \
 		-Dgallium-nine=false \
-		-Degl=false \
-		-Dgbm=false \
-		-Dgles1=false \
-		-Dgles2=false \
+		-Degl=disabled \
+		-Dgbm=disabled \
+		-Dgles1=disabled \
+		-Dgles2=disabled \
 		-Dglx=disabled \
 		-Dopengl=false \
-		-Dshared-glapi=false \
-		-Dosmesa=none \
-		-Dplatforms=
+		-Dshared-glapi=disabled \
+		-Dosmesa=none
 
 LDFLAGS_i386=		-Wl,-znotext
 
-MESON_ARGS+=	-Dgallium-xa=true
+MESON_ARGS+=	-Dgallium-xa=enabled
 
 .include "${MASTERDIR}/Makefile.targets"
 .include <bsd.port.post.mk>
