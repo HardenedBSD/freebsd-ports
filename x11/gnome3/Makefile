@@ -3,7 +3,7 @@
 
 PORTNAME=	gnome3
 PORTVERSION=	3.36
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	x11 gnome
 
 MAINTAINER=	gnome@FreeBSD.org
@@ -21,7 +21,6 @@ RUN_DEPENDS?=	dconf-editor:devel/dconf-editor \
 		gnome-keyring>=3.0.0:security/gnome-keyring \
 		gnome-power-manager>=3.0.0:sysutils/gnome-power-manager \
 		orca>=3.0.0:accessibility/orca \
-		gnome-mount:sysutils/gnome-mount \
 		gnome-shell>=3.0.0:x11/gnome-shell \
 		gnome-shell-extensions>=3.0.0:x11/gnome-shell-extensions \
 		gnome-tweaks:deskutils/gnome-tweaks \
