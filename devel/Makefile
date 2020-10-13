@@ -1385,6 +1385,7 @@
     SUBDIR += llbuild
     SUBDIR += llnextgen
     SUBDIR += llvm
+    SUBDIR += llvm-cheri
     SUBDIR += llvm-devel
     SUBDIR += llvm10
     SUBDIR += llvm11
@@ -4176,6 +4177,7 @@
     SUBDIR += py-bandit
     SUBDIR += py-bcdoc
     SUBDIR += py-beautifultable
+    SUBDIR += py-behave
     SUBDIR += py-bidict
     SUBDIR += py-billiard
     SUBDIR += py-binaryornot
