@@ -37,12 +37,15 @@ SSP_UNSAFE=	yes
 CFLAGS:=	${CFLAGS:N-mretpoline}
 CXXFLAGS:=	${CXXFLAGS:N-mretpoline}
 
+<<<<<<< HEAD
 USE_HARDENING=	pie:off retpoline:off
 
 OPTIONS_DEFINE=		BOOTSTRAP GRAPHITE
+=======
+OPTIONS_DEFINE=		BOOTSTRAP
+>>>>>>> upstream/master
 OPTIONS_DEFAULT=	BOOTSTRAP
 BOOTSTRAP_DESC=		Build using a full bootstrap
-GRAPHITE_DESC=		Support for Graphite loop optimizations
 
 .include <bsd.port.pre.mk>
 
@@ -96,11 +99,6 @@ INFO+=		gcc${SUFFIX}/libquadmath \
 		gcc${SUFFIX}/libitm
 SUB_FILES=	pkg-message
 SUB_LIST+=	TARGLIB=${TARGLIB}
-
-.if ${PORT_OPTIONS:MGRAPHITE}
-LIB_DEPENDS+=	libisl.so:devel/isl
-CONFIGURE_ARGS+=--with-isl=${LOCALBASE}
-.endif
 
 CONFIGURE_ARGS+=--enable-languages=${LANGUAGES}
 

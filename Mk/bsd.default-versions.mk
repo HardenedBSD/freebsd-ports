@@ -67,7 +67,7 @@ LINUX_DEFAULT?=		c7
 # Please give notice to the Graphics Team (x11@FreeBSD.org) in advance before 
 # bumping the LLVM version.
 LLVM_DEFAULT?=		90
-# Possible values: 5.1, 5.2, 5.3
+# Possible values: 5.1, 5.2, 5.3, 5.4
 LUA_DEFAULT?=		5.2
 # Possible values: 5.5, 5.6, 5.7, 8.0, 10.3m, 10.4m, 10.5m, 5.5p, 5.6p, 5.7p, 5.6w, 5.7w
 MYSQL_DEFAULT?=		5.7
@@ -86,7 +86,7 @@ _PERL5_FROM_BIN!=	${LOCALBASE}/bin/perl -e 'printf "%vd\n", $$^V;'
 _EXPORTED_VARS+=	_PERL5_FROM_BIN
 PERL5_DEFAULT:=		${_PERL5_FROM_BIN:R}
 .endif
-# Possible values: 9.5, 9.6, 10, 11, 12
+# Possible values: 9.5, 9.6, 10, 11, 12, 13
 PGSQL_DEFAULT?=		12
 # Possible values: 7.2, 7.3, 7.4
 PHP_DEFAULT?=		7.4

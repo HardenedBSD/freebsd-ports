@@ -13,7 +13,12 @@ COMMENT=	Geographic objects support for PostgreSQL databases
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
+=======
+DEPRECATED=	Upstream no longer maintained
+EXPIRATION_DATE=	2020-11-15
+>>>>>>> upstream/master
 
 LIB_DEPENDS=	libproj.so:graphics/proj \
 		libgeos.so:graphics/geos \

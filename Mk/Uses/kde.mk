@@ -58,7 +58,7 @@ KDE_PLASMA_VERSION?=		5.20.0
 KDE_PLASMA_BRANCH?=		stable
 
 # Current KDE frameworks.
-KDE_FRAMEWORKS_VERSION?=	5.74.0
+KDE_FRAMEWORKS_VERSION?=	5.75.0
 KDE_FRAMEWORKS_BRANCH?= 	stable
 
 # Current KDE applications.
@@ -570,7 +570,7 @@ kde-plasma-browser-integration_PORT=	www/plasma5-plasma-browser-integration
 kde-plasma-browser-integration_PATH=	${KDE_PREFIX}/bin/plasma-browser-integration-host
 
 kde-plasma-desktop_PORT=	x11/plasma5-plasma-desktop
-kde-plasma-desktop_PATH=	${KDE_PREFIX}/bin/krdb
+kde-plasma-desktop_PATH=	${KDE_PREFIX}/bin/kaccess
 
 kde-plasma-disks_PORT=		sysutils/plasma5-plasma-disks
 kde-plasma-disks_PATH=		${KDE_PREFIX}/lib/libexec/kauth/kded-smart-helper

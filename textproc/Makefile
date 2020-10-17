@@ -1251,6 +1251,7 @@
     SUBDIR += py-elasticsearch-dsl
     SUBDIR += py-elasticsearch5
     SUBDIR += py-elasticsearch6
+    SUBDIR += py-elementpath
     SUBDIR += py-empy
     SUBDIR += py-enchant
     SUBDIR += py-et_xmlfile
@@ -1414,6 +1415,7 @@
     SUBDIR += py-transifex-client
     SUBDIR += py-translationstring
     SUBDIR += py-transpopy
+    SUBDIR += py-ttp
     SUBDIR += py-ucl
     SUBDIR += py-ufal.udpipe
     SUBDIR += py-whoosh
