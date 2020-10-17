@@ -16,13 +16,8 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 USES=		tar:xz
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
 
-MAKE_ENV=	DOCSDIR="${DOCSDIR}"
-
-=======
->>>>>>> upstream/master
 SUB_FILES=	dmidecode
 
 OPTIONS_DEFINE=	DOCS
