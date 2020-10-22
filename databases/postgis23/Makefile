@@ -13,8 +13,12 @@ COMMENT=	Geographic objects support for PostgreSQL databases
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
 
+=======
+BROKEN=		Does not build with graphics/gdal default (pgsql conflicts)
+>>>>>>> upstream/master
 DEPRECATED=	Upstream no longer maintained
 EXPIRATION_DATE=	2020-11-15
 
