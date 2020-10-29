@@ -38,15 +38,8 @@ SSP_UNSAFE=	yes
 CFLAGS:=	${CFLAGS:N-mretpoline}
 CXXFLAGS:=	${CXXFLAGS:N-mretpoline}
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off retpoline:off
 
-OPTIONS_DEFINE=		BOOTSTRAP
-OPTIONS_DEFAULT=	BOOTSTRAP
-BOOTSTRAP_DESC=		Build using a full bootstrap
-
-=======
->>>>>>> upstream/master
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == amd64
