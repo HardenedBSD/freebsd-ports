@@ -2,9 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	qjail
-PORTVERSION=	5.5
+PORTVERSION=	5.4
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}
+PKGNAMESUFFIX=	54
 
 MAINTAINER=	qjail1@a1poweruser.com
 COMMENT=	Utility to quickly deploy and manage jails
@@ -31,7 +32,7 @@ do-install:
 		${STAGEDIR}${PREFIX}/etc/rc.d
 	${INSTALL_DATA}   ${WRKSRC}/qjail.portsnap.conf        \
 		${STAGEDIR}${PREFIX}/etc/qjail.portsnap.conf.sample
-.for i in qjail qjail-intro qjail-drive-traffic qjail-vnet-howto \
+.for i in qjail qjail-intro qjail-howto qjail-vnet-howto \
 	qjail-ipv6-testing
 	${INSTALL_MAN}   ${WRKSRC}/${i}.8 ${STAGEDIR}${MAN8PREFIX}/man/man8
 .endfor
