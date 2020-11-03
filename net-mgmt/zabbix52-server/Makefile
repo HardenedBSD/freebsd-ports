@@ -1,8 +1,9 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
 # $FreeBSD$
 
-PORTNAME=	zabbix44
-PORTVERSION=	4.4.10
+PORTNAME=	zabbix52
+PORTVERSION=	5.2.0
+PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://cdn.zabbix.com/zabbix/sources/stable/${PORTVERSION:R}/
 PKGNAMESUFFIX?=	-server
@@ -14,13 +15,10 @@ COMMENT=	Enterprise-class open source distributed monitoring (${PKGNAMESUFFIX:S/
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-DEPRECATED=     End of Life
-EXPIRATION_DATE=2020-12-01
-
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-CONFLICTS_INSTALL=	zabbix[0-35-9][0-9]${PKGNAMESUFFIX} \
-		zabbix4[0-35-9]${PKGNAMESUFFIX} \
+CONFLICTS_INSTALL=	zabbix[0-46-9][0-9]${PKGNAMESUFFIX} \
+		zabbix5[0-13-9]${PKGNAMESUFFIX} \
 		zabbix[0-9]${PKGNAMESUFFIX}
 
 ZABBIX_BUILD=	${PKGNAMESUFFIX:S/^-//}
@@ -197,7 +195,7 @@ post-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/${ZABBIX_BUILD:Q}/database
 	@${RM} ${WRKSRC}/database/*/Makefile*
 	(cd ${WRKSRC}/database/ && \
-		${COPYTREE_SHARE} "ibm_db2 mysql oracle postgresql sqlite3" \
+		${COPYTREE_SHARE} "mysql oracle postgresql sqlite3" \
 		${STAGEDIR}${DATADIR}/${ZABBIX_BUILD:Q}/database/)
 
 	${MV} ${STAGEDIR}${ETCDIR}/zabbix_${ZABBIX_BUILD}.conf \
