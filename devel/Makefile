@@ -4044,6 +4044,7 @@
     SUBDIR += py-aenum
     SUBDIR += py-aiofiles
     SUBDIR += py-aioice
+    SUBDIR += py-aioitertools
     SUBDIR += py-aiologger
     SUBDIR += py-aiorpcX
     SUBDIR += py-aiortc
@@ -4389,6 +4390,7 @@
     SUBDIR += py-fastprogress
     SUBDIR += py-fbprophet
     SUBDIR += py-filebytes
+    SUBDIR += py-filedepot
     SUBDIR += py-filemagic
     SUBDIR += py-first
     SUBDIR += py-five.globalrequest
@@ -4634,6 +4636,7 @@
     SUBDIR += py-monty
     SUBDIR += py-more-itertools
     SUBDIR += py-more-itertools5
+    SUBDIR += py-moto
     SUBDIR += py-mox
     SUBDIR += py-mox3
     SUBDIR += py-msal
@@ -4805,6 +4808,7 @@
     SUBDIR += py-poyo
     SUBDIR += py-prance
     SUBDIR += py-pre-commit
+    SUBDIR += py-pre-commit-hooks
     SUBDIR += py-preshed
     SUBDIR += py-pretend
     SUBDIR += py-prettyprinter

@@ -989,6 +989,7 @@
     SUBDIR += py-spake2
     SUBDIR += py-ssh
     SUBDIR += py-ssh-audit
+    SUBDIR += py-sshpubkeys
     SUBDIR += py-stem
     SUBDIR += py-stix
     SUBDIR += py-stix2
