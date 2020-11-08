@@ -4207,6 +4207,7 @@
     SUBDIR += py-botocore
     SUBDIR += py-bsd
     SUBDIR += py-btest
+    SUBDIR += py-build
     SUBDIR += py-buildbot
     SUBDIR += py-buildbot-console-view
     SUBDIR += py-buildbot-grid-view
@@ -6016,6 +6017,7 @@
     SUBDIR += rubygem-ffi-win32-extensions
     SUBDIR += rubygem-ffi-yajl
     SUBDIR += rubygem-ffi110
+    SUBDIR += rubygem-fiber-local
     SUBDIR += rubygem-file-tail
     SUBDIR += rubygem-filesize
     SUBDIR += rubygem-fileutils
