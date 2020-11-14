@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	cfengine-masterfiles
-PORTVERSION=	3.13.0
+PORTVERSION=	3.16.0
 CATEGORIES=	sysutils
 MASTER_SITES=	https://cfengine-package-repos.s3.amazonaws.com/tarballs/
 
@@ -15,12 +15,9 @@ LICENSE=	GPLv3
 
 CPE_VENDOR=	gnu
 
-DEPRECATED=		EOL
-EXPIRATION_DATE=	2020-12-31
-
 CONFLICTS=	cfengine-masterfiles3[0-9]-* cfengine-masterfiles31[013-9]-*
 .if !defined(MASTERDIR)
-PKGNAMESUFFIX=	313
+PKGNAMESUFFIX=	316
 CONFLICTS+=	cfengine-masterfiles-3.*
 .endif
 
