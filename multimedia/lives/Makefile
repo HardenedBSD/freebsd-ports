@@ -28,7 +28,8 @@ RUN_DEPENDS=	analyseplugin:audio/ladspa \
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		autoreconf compiler:c++11-lib gettext-runtime gettext-tools \			gl gnome libtool localbase pathfix perl5 pkgconfig python \
+USES=		autoreconf compiler:c++11-lib gettext-runtime gettext-tools \
+		gl gnome libtool localbase pathfix perl5 pkgconfig python \
 		sdl shebangfix xorg
 SHEBANG_FILES=	build-lives-rfx-plugin build-lives-rfx-plugin-multi smogrify \
 		tools/autolives.pl lives-plugins/plugins/encoders/*_encoder \
@@ -64,9 +65,11 @@ OPTIONS_MULTI_MPLAYERS=		MPLAYER MPV
 OPTIONS_MULTI_YOUTUBE_DLX=	YOUTUBE_DL YOUTUBE_DLC
 OPTIONS_RADIO=			IMAGEMAGICK
 OPTIONS_RADIO_IMAGEMAGICK=	IMAGEMAGICK6 IMAGEMAGICK7
-OPTIONS_DEFAULT=		CDDA2WAV DOCS DV FFTW GCONF GHOSTSCRIPT IMAGEMAGICK7 JACK \
-				LAME MATROSKA MPG123 MPLAYER NLS OGG OGG123 OGM OPENCV \
-				SCHROEDINGER THEORA X264 XDG_SCREENSAVER XDOTOOL XWININFO
+OPTIONS_DEFAULT=		CDDA2WAV DOCS DV FFTW GCONF GHOSTSCRIPT \
+				IMAGEMAGICK7 JACK LAME MATROSKA MPG123 \
+				MPLAYER NLS OGG OGG123 OGM OPENCV \
+				SCHROEDINGER THEORA X264 XDG_SCREENSAVER \
+				XDOTOOL XWININFO YOUTUBE_DLC
 OPTIONS_SUB=			yes
 
 ALSA_CONFIGURE_OFF=		--disable-alsa
