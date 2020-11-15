@@ -861,6 +861,7 @@
     SUBDIR += gprbuild
     SUBDIR += gputils
     SUBDIR += gradle
+    SUBDIR += gradle-completion
     SUBDIR += gradle4
     SUBDIR += gradle5
     SUBDIR += gradle62
@@ -4353,6 +4354,7 @@
     SUBDIR += py-docker-py
     SUBDIR += py-dockerpty
     SUBDIR += py-docopt
+    SUBDIR += py-doctest-ignore-unicode
     SUBDIR += py-dogpile.cache
     SUBDIR += py-doit
     SUBDIR += py-dotted
