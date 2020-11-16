@@ -262,7 +262,6 @@
     SUBDIR += byacc
     SUBDIR += byaccj
     SUBDIR += bzr
-    SUBDIR += bzr-fastimport
     SUBDIR += c2mdoc
     SUBDIR += caf
     SUBDIR += calibrator
@@ -3413,6 +3412,7 @@
     SUBDIR += p5-Test-Signature
     SUBDIR += p5-Test-Simple
     SUBDIR += p5-Test-Singleton
+    SUBDIR += p5-Test-Snapshot
     SUBDIR += p5-Test-Spec
     SUBDIR += p5-Test-Spelling
     SUBDIR += p5-Test-Strict
@@ -4008,7 +4008,6 @@
     SUBDIR += py-QtPy
     SUBDIR += py-RPyC
     SUBDIR += py-SymbolType
-    SUBDIR += py-ToscaWidgets
     SUBDIR += py-XStatic
     SUBDIR += py-XStatic-Angular
     SUBDIR += py-XStatic-Angular-Bootstrap
@@ -4223,7 +4222,6 @@
     SUBDIR += py-cachetools
     SUBDIR += py-cachetools3
     SUBDIR += py-cachy
-    SUBDIR += py-calendar
     SUBDIR += py-canonicaljson
     SUBDIR += py-capstone
     SUBDIR += py-castellan
@@ -4347,7 +4345,6 @@
     SUBDIR += py-dirspec
     SUBDIR += py-dis3
     SUBDIR += py-distlib
-    SUBDIR += py-distorm
     SUBDIR += py-distributed
     SUBDIR += py-dj31-django-rq
     SUBDIR += py-django-rq
@@ -4381,7 +4378,6 @@
     SUBDIR += py-extras
     SUBDIR += py-extremes
     SUBDIR += py-fabric
-    SUBDIR += py-fabric1
     SUBDIR += py-fabric3
     SUBDIR += py-factory-boy
     SUBDIR += py-fam
@@ -4929,6 +4925,7 @@
     SUBDIR += py-pytest-localserver
     SUBDIR += py-pytest-mock
     SUBDIR += py-pytest-mutagen
+    SUBDIR += py-pytest-mypy
     SUBDIR += py-pytest-pep8
     SUBDIR += py-pytest-pycodestyle
     SUBDIR += py-pytest-randomly
@@ -5003,7 +5000,6 @@
     SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rchitect
-    SUBDIR += py-rcsparse
     SUBDIR += py-readme_renderer
     SUBDIR += py-rebulk
     SUBDIR += py-rednose
@@ -5192,6 +5188,7 @@
     SUBDIR += py-versiontools
     SUBDIR += py-vine
     SUBDIR += py-virtualenv
+    SUBDIR += py-virtualenv-api
     SUBDIR += py-virtualenv-clone
     SUBDIR += py-virtualenvwrapper
     SUBDIR += py-visitor
@@ -5296,7 +5293,6 @@
     SUBDIR += pylint1
     SUBDIR += pyobfuscate
     SUBDIR += pyotherside-qt5
-    SUBDIR += pyrex
     SUBDIR += pyside2
     SUBDIR += pyside2-tools
     SUBDIR += pystring
@@ -5561,6 +5557,7 @@
     SUBDIR += rubygem-aws-sdk-glacier
     SUBDIR += rubygem-aws-sdk-globalaccelerator
     SUBDIR += rubygem-aws-sdk-glue
+    SUBDIR += rubygem-aws-sdk-gluedatabrew
     SUBDIR += rubygem-aws-sdk-greengrass
     SUBDIR += rubygem-aws-sdk-groundstation
     SUBDIR += rubygem-aws-sdk-guardduty
