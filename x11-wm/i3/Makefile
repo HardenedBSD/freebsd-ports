@@ -13,12 +13,9 @@ COMMENT=	Improved dynamic tiling window manager
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-<<<<<<< HEAD
 USE_HARDENING=	cfi safestack
 
-=======
 BUILD_DEPENDS=	bash:shells/bash
->>>>>>> upstream/master
 LIB_DEPENDS=	libcairo.so:graphics/cairo \
 		libev.so:devel/libev \
 		libpangocairo-1.0.so:x11-toolkits/pango \
