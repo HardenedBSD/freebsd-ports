@@ -19,13 +19,9 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 CONFLICTS?=		openssh-3.* ssh-1.* ssh2-3.* openssh-portable-devel-*
 
-<<<<<<< HEAD
 USE_HARDENING=		safestack
 
-USES=			alias autoreconf ncurses ssl
-=======
 USES=			alias autoreconf localbase ncurses pkgconfig ssl
->>>>>>> freebsd/master
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--prefix=${PREFIX} \
 			--with-ssl-engine \
