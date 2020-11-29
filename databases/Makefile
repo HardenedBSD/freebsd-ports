@@ -187,6 +187,7 @@
     SUBDIR += mariadb105-client
     SUBDIR += mariadb105-server
     SUBDIR += mdbtools
+    SUBDIR += mdbx
     SUBDIR += mdcached
     SUBDIR += memcached
     SUBDIR += mongodb-tools
@@ -1033,6 +1034,7 @@
     SUBDIR += xapian-bindings12
     SUBDIR += xapian-core
     SUBDIR += xapian-core12
+    SUBDIR += xls2txt
     SUBDIR += xrootd
     SUBDIR += xtrabackup
     SUBDIR += xtrabackup8
