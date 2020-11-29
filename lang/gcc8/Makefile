@@ -38,13 +38,9 @@ SSP_UNSAFE=	yes
 CFLAGS:=	${CFLAGS:N-mretpoline}
 CXXFLAGS:=	${CXXFLAGS:N-mretpoline}
 
-<<<<<<< HEAD
 USE_HARDENING=	retpoline:off relro:off pie:off
 
-OPTIONS_DEFINE=		BOOTSTRAP GRAPHITE
-=======
 OPTIONS_DEFINE=		BOOTSTRAP
->>>>>>> upstream/master
 OPTIONS_DEFAULT=	BOOTSTRAP
 BOOTSTRAP_DESC=		Build using a full bootstrap
 
