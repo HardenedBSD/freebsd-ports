@@ -2,11 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	haproxy
-DISTVERSION=	2.4-dev1
+DISTVERSION=	2.3.2
 CATEGORIES=	net www
-MASTER_SITES=	http://www.haproxy.org/download/2.4/src/devel/
-PKGNAMESUFFIX=	-devel
-DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
+PKGNAMESUFFIX=	23
+MASTER_SITES=	http://www.haproxy.org/download/2.3/src/
 
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Reliable, high performance TCP/HTTP load balancer
