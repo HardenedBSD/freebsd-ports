@@ -11,9 +11,13 @@ COMMENT?=	Java Development Kit ${JDK_MAJOR_VERSION}
 
 LICENSE=	GPLv2
 
+<<<<<<< HEAD
 USE_HARDENING=	pie:java
 
 ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386 powerpc powerpc64
+=======
+ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386 powerpc powerpc64 powerpc64le
+>>>>>>> freebsd/master
 
 BUILD_DEPENDS=	zip:archivers/zip \
 		autoconf>0:devel/autoconf \
@@ -283,7 +287,7 @@ CONFIGURE_ARGS+=	--disable-jfr
 MAKE_ENV+=	LFLAGS="-Wl,-z,notext"
 .endif
 
-.if ${ARCH} == amd64 || ${ARCH} == i386 || ${ARCH} == powerpc64
+.if ${ARCH} == amd64 || ${ARCH} == i386 || ${ARCH:Mpowerpc64*}
 JDK_BUILD_JVM=	server
 .else
 JDK_BUILD_JVM=	zero
@@ -312,6 +316,11 @@ MAKE_ARGS+=	USE_PRECOMPILED_HEADER=0
 
 .if ${ARCH} == powerpc64
 CONFIGURE_ARGS+=	--disable-jfr
+.endif
+
+.if ${ARCH} == powerpc64le
+CONFIGURE_ARGS+=	--disable-jfr
+MAKE_ARGS+=	USE_PRECOMPILED_HEADER=0
 .endif
 
 .if empty(ICONV_LIB)
