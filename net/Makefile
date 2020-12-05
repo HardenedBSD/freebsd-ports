@@ -1041,7 +1041,7 @@
     SUBDIR += py-miniupnpc
     SUBDIR += py-mpi4py
     SUBDIR += py-msrplib
-    SUBDIR += py-ndg_httpsclient
+    SUBDIR += py-ndg-httpsclient
     SUBDIR += py-netaddr
     SUBDIR += py-netif
     SUBDIR += py-netifaces
