@@ -15,6 +15,8 @@ COMMENT=	Lightweight network intrusion detection system
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USE_HARDENING=	safestack
+
 BUILD_DEPENDS=	daq>=2.0.0:net/daq
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libdnet.so:net/libdnet \
@@ -81,13 +83,6 @@ APPID_LIB_DEPENDS=	libluajit-5.1.so:lang/luajit
 APPID_CONFIGURE_ENV+=	luajit_CFLAGS="-I${LOCALBASE}/include/luajit-2.0" \
 			luajit_LIBS="-L${LOCALBASE}/lib -lluajit-5.1"
 
-<<<<<<< HEAD
-USE_HARDENING=	safestack
-
-.include <bsd.port.options.mk>
-
-=======
->>>>>>> freebsd/master
 CONFIG_FILES=	classification.config gen-msg.map reference.config \
 		snort.conf threshold.conf unicode.map file_magic.conf
 
