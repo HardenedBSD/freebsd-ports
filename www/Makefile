@@ -328,6 +328,7 @@
     SUBDIR += madsonic
     SUBDIR += man2web
     SUBDIR += mathjax
+    SUBDIR += mathjax3
     SUBDIR += mathopd
     SUBDIR += matomo
     SUBDIR += mattermost-server
@@ -2125,6 +2126,7 @@
     SUBDIR += serendipity
     SUBDIR += serf
     SUBDIR += servlet-api
+    SUBDIR += sfeed
     SUBDIR += sfnt2woff
     SUBDIR += shellinabox
     SUBDIR += shttpd

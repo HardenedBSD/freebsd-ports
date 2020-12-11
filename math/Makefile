@@ -921,6 +921,7 @@
     SUBDIR += spooles
     SUBDIR += spooles-mpich
     SUBDIR += spot
+    SUBDIR += sprng
     SUBDIR += stp
     SUBDIR += suitesparse
     SUBDIR += sundials
@@ -932,6 +933,7 @@
     SUBDIR += tablix
     SUBDIR += taucs
     SUBDIR += tblis
+    SUBDIR += testu01
     SUBDIR += tetgen
     SUBDIR += teyjus
     SUBDIR += timbl
