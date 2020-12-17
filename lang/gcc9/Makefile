@@ -41,11 +41,7 @@ SSP_UNSAFE=	yes
 CFLAGS:=	${CFLAGS:N-mretpoline}
 CXXFLAGS:=	${CXXFLAGS:N-mretpoline}
 
-<<<<<<< HEAD
-OPTIONS_DEFINE=		BOOTSTRAP GRAPHITE PLUGINS
-=======
 OPTIONS_DEFINE=		BOOTSTRAP GRAPHITE
->>>>>>> upstream/master
 OPTIONS_DEFAULT=	BOOTSTRAP
 BOOTSTRAP_DESC=		Build using a full bootstrap
 GRAPHITE_DESC=		Support for Graphite loop optimizations
