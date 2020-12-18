@@ -307,7 +307,6 @@
     SUBDIR += gbrainy
     SUBDIR += gcompris-qt
     SUBDIR += gemdropx
-    SUBDIR += gemrb
     SUBDIR += genact
     SUBDIR += gigalomania
     SUBDIR += gillo
@@ -537,6 +536,7 @@
     SUBDIR += libretro-vbanext
     SUBDIR += libretro-vecx
     SUBDIR += libretro-virtualjaguar
+    SUBDIR += libretro-xrick
     SUBDIR += libretro-yabause
     SUBDIR += libshhcards
     SUBDIR += libtmcg
