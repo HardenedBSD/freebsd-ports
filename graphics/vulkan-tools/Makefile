@@ -3,15 +3,15 @@
 PORTNAME=	vulkan-tools
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.2.162
-CATEGORIES=	devel graphics
+CATEGORIES=	graphics
 
-MAINTAINER=	greg@unrelenting.technology
+MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Tools and demos for the Vulkan graphics API
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:devel/vulkan-headers \
-		glslangValidator:devel/glslang
+BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers \
+		glslangValidator:graphics/glslang
 LIB_DEPENDS=	libvulkan.so:graphics/vulkan-loader
 
 USES=		cmake compiler:c++11-lib pkgconfig python:3.4+,build

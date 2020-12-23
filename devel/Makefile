@@ -819,7 +819,6 @@
     SUBDIR += global
     SUBDIR += glog
     SUBDIR += glrparser
-    SUBDIR += glslang
     SUBDIR += glui
     SUBDIR += gmake
     SUBDIR += gn
@@ -6861,9 +6860,6 @@
     SUBDIR += vitables
     SUBDIR += volk
     SUBDIR += vstr
-    SUBDIR += vulkan-headers
-    SUBDIR += vulkan-tools
-    SUBDIR += vulkan-validation-layers
     SUBDIR += vxlog
     SUBDIR += wand-libconfig
     SUBDIR += wandio
