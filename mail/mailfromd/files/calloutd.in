@@ -2,7 +2,7 @@
 #
 # $FreeBSD$
 #
-# PROVIDE: imap4d
+# PROVIDE: calloutd
 # REQUIRE: DAEMON
 # BEFORE: mail
 # KEYWORD: shutdown
@@ -10,15 +10,15 @@
 
 . /etc/rc.subr
 
-name="imap4d"
-rcvar=imap4d_enable
+name="calloutd"
+rcvar=calloutd_enable
 
-: ${imap4d_enable="NO"}
+: ${calloutd_enable="NO"}
 
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/${name}.pid"
 
-required_files="%%PREFIX%%/etc/mailutils.conf %%PREFIX%%/etc/mailutils/${name}"
+required_files="%%PREFIX%%/etc/mailfromd.conf"
 
 extra_commands="configlint"
 configlint_cmd="${name} --config-lint"
