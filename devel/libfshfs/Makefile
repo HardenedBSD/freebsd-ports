@@ -1,14 +1,14 @@
-# Created by: Antoine Brodin <antoine@FreeBSD.org>
 # $FreeBSD$
 
-PORTNAME=	libqcow
-DISTVERSION=	alpha-20201213
+PORTNAME=	libfshfs
+# If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
+DISTVERSION=	experimental-20201104
 CATEGORIES=	devel
-MASTER_SITES=	https://github.com/libyal/libqcow/releases/download/${PORTVERSION:E}/ \
+MASTER_SITES=	https://github.com/libyal/libfshfs/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine
 
 MAINTAINER=	antoine@FreeBSD.org
-COMMENT=	Library and tooling to access the QEMU Copy-On-Write image format
+COMMENT=	Library and tools to access the Mac OS Hierarchical File System (HFS)
 
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-python --with-openssl=no
 CONFIGURE_ENV=	PYTHON_CONFIG=${PYTHON_CMD}-config
-USES=		fuse libtool pathfix pkgconfig python:3.5+
+USES=		libtool pathfix python:3.5+
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:E}
