@@ -1,7 +1,11 @@
 # $FreeBSD$
 
 PORTNAME=	pkg
+<<<<<<< HEAD
 DISTVERSION=	1.15.10
+=======
+DISTVERSION=	1.16.1
+>>>>>>> upstream/master
 _PKG_VERSION=	${DISTVERSION}
 CATEGORIES=	ports-mgmt
 #MASTER_SITES=	\
