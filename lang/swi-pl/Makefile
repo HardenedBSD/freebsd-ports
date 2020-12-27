@@ -12,6 +12,8 @@ COMMENT=	Edinburgh-style Prolog compiler
 
 LICENSE=	BSD2CLAUSE
 
+USE_HARDENING=	pie:off relro:off
+
 BROKEN_i386=	fails to link: libswipl.so: undefined reference to __atomic_compare_exchange_8
 BROKEN_mips=	fails to link: libswipl.so: undefined reference to '__sync_sub_and_fetch_4'
 BROKEN_mips64=	fails to link: libswipl.so: undefined reference to '__sync_sub_and_fetch_4'
@@ -22,15 +24,8 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libossp-uuid.so:misc/ossp-uuid \
 		libyaml.so:textproc/libyaml
 
-<<<<<<< HEAD
-USE_HARDENING=	pie:off relro:off
-
-USES=		compiler:c11 libedit cmake jpeg libarchive pathfix pkgconfig \
-		readline shebangfix ssl xorg
-=======
 USES=		compiler:c11 libedit cmake libarchive pathfix pkgconfig \
 		readline shebangfix ssl
->>>>>>> freebsd/master
 USE_XORG=	ice sm x11 xext xft xinerama xpm xt
 
 OPTIONS_DEFINE=		TCMALLOC EXAMPLES XPCE
