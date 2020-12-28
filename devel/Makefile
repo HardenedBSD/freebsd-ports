@@ -34,6 +34,7 @@
     SUBDIR += R-cran-cpp11
     SUBDIR += R-cran-crayon
     SUBDIR += R-cran-data.table
+    SUBDIR += R-cran-desc
     SUBDIR += R-cran-diffobj
     SUBDIR += R-cran-doParallel
     SUBDIR += R-cran-ellipsis
@@ -51,6 +52,7 @@
     SUBDIR += R-cran-gsubfn
     SUBDIR += R-cran-gtools
     SUBDIR += R-cran-hms
+    SUBDIR += R-cran-ini
     SUBDIR += R-cran-iterators
     SUBDIR += R-cran-itertools
     SUBDIR += R-cran-later
@@ -90,6 +92,7 @@
     SUBDIR += R-cran-tidyr
     SUBDIR += R-cran-tidyselect
     SUBDIR += R-cran-tinytest
+    SUBDIR += R-cran-uuid
     SUBDIR += R-cran-vcd
     SUBDIR += R-cran-vctrs
     SUBDIR += R-cran-withr
