@@ -76,6 +76,7 @@
     SUBDIR += R-cran-randomForest
     SUBDIR += R-cran-registry
     SUBDIR += R-cran-rematch2
+    SUBDIR += R-cran-remotes
     SUBDIR += R-cran-repr
     SUBDIR += R-cran-reshape
     SUBDIR += R-cran-reshape2
@@ -168,7 +169,6 @@
     SUBDIR += arm-elf-binutils
     SUBDIR += arm-none-eabi-gcc
     SUBDIR += arm-none-eabi-gcc492
-    SUBDIR += arm-none-eabi-gdb
     SUBDIR += arm-none-eabi-newlib
     SUBDIR += aros-sdk
     SUBDIR += arpc
@@ -3881,13 +3881,13 @@
     SUBDIR += pecl-protobuf
     SUBDIR += pecl-psr
     SUBDIR += pecl-raphf2
+    SUBDIR += pecl-runkit7
     SUBDIR += pecl-swoole
     SUBDIR += pecl-sync
     SUBDIR += pecl-uploadprogress
     SUBDIR += pecl-uuid
     SUBDIR += pecl-uv
     SUBDIR += pecl-vld
-    SUBDIR += pecl-weakref2
     SUBDIR += pecl-xdebug
     SUBDIR += pecl-yac
     SUBDIR += pecl-yaconf
@@ -3904,16 +3904,6 @@
     SUBDIR += php-ice37
     SUBDIR += php-libawl
     SUBDIR += php-maxminddb
-    SUBDIR += php72-gettext
-    SUBDIR += php72-intl
-    SUBDIR += php72-json
-    SUBDIR += php72-pcntl
-    SUBDIR += php72-readline
-    SUBDIR += php72-shmop
-    SUBDIR += php72-sysvmsg
-    SUBDIR += php72-sysvsem
-    SUBDIR += php72-sysvshm
-    SUBDIR += php72-tokenizer
     SUBDIR += php73-gettext
     SUBDIR += php73-intl
     SUBDIR += php73-json
@@ -4468,6 +4458,7 @@
     SUBDIR += py-gyp
     SUBDIR += py-hash_ring
     SUBDIR += py-heapdict
+    SUBDIR += py-helpdev
     SUBDIR += py-hg-evolve
     SUBDIR += py-hglib
     SUBDIR += py-hgtools

@@ -163,7 +163,6 @@
     SUBDIR += filtron
     SUBDIR += firefox
     SUBDIR += firefox-esr
-    SUBDIR += flashplayer
     SUBDIR += flat-frog
     SUBDIR += flexget
     SUBDIR += flickcurl
@@ -314,7 +313,6 @@
     SUBDIR += links
     SUBDIR += links1
     SUBDIR += linux-c7-qtwebkit
-    SUBDIR += linux-flashplayer
     SUBDIR += linux-opera
     SUBDIR += litmus
     SUBDIR += ljdeps
@@ -337,8 +335,6 @@
     SUBDIR += mattermost-server
     SUBDIR += mattermost-webapp
     SUBDIR += mediawiki131
-    SUBDIR += mediawiki133
-    SUBDIR += mediawiki134
     SUBDIR += mediawiki135
     SUBDIR += mergelog
     SUBDIR += mhonarc
@@ -394,7 +390,6 @@
     SUBDIR += mod_mono
     SUBDIR += mod_mpm_itk
     SUBDIR += mod_perl2
-    SUBDIR += mod_php72
     SUBDIR += mod_php73
     SUBDIR += mod_php74
     SUBDIR += mod_php80
@@ -1376,9 +1371,6 @@
     SUBDIR += pglogd
     SUBDIR += phalcon
     SUBDIR += phalcon4
-    SUBDIR += php72-opcache
-    SUBDIR += php72-session
-    SUBDIR += php72-tidy
     SUBDIR += php73-opcache
     SUBDIR += php73-session
     SUBDIR += php73-tidy
@@ -1420,7 +1412,6 @@
     SUBDIR += py-aiohttp
     SUBDIR += py-aiohttp-middlewares
     SUBDIR += py-aiohttp-wsgi
-    SUBDIR += py-aiohttp2
     SUBDIR += py-aiohttp_cors
     SUBDIR += py-aioquic
     SUBDIR += py-arxiv
