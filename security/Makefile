@@ -849,7 +849,6 @@
     SUBDIR += py-artifacts
     SUBDIR += py-asyncssh
     SUBDIR += py-authlib
-    SUBDIR += py-backports.ssl_match_hostname
     SUBDIR += py-bcrypt
     SUBDIR += py-btchip-python
     SUBDIR += py-cerealizer
@@ -1160,7 +1159,6 @@
     SUBDIR += samhain-client
     SUBDIR += samhain-server
     SUBDIR += sancp
-    SUBDIR += sandsifter
     SUBDIR += sasp
     SUBDIR += scanlogd
     SUBDIR += scanssh
