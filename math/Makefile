@@ -311,6 +311,7 @@
     SUBDIR += graphthing
     SUBDIR += gretl
     SUBDIR += gri
+    SUBDIR += gringo
     SUBDIR += grpn
     SUBDIR += gsl
     SUBDIR += half
@@ -746,6 +747,7 @@
     SUBDIR += py-chaospy
     SUBDIR += py-claripy
     SUBDIR += py-cma
+    SUBDIR += py-cmaes
     SUBDIR += py-colormath
     SUBDIR += py-cryptominisat
     SUBDIR += py-cvxopt
@@ -794,6 +796,7 @@
     SUBDIR += py-numpy
     SUBDIR += py-numpy-stl
     SUBDIR += py-opt-einsum
+    SUBDIR += py-optuna
     SUBDIR += py-or-tools
     SUBDIR += py-osqp
     SUBDIR += py-pandas
