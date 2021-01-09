@@ -123,16 +123,12 @@ GN_BOOTSTRAP_FLAGS=	--no-clean --no-rebuild --skip-generate-buildfiles
 GN_ARGS+=	google_api_key="AIzaSyBsp9n41JLW8jCokwn7vhoaMejDFRd1mp8" \
 		google_default_client_id="996322985003.apps.googleusercontent.com" \
 		google_default_client_secret="IR1za9-1VK0zZ0f_O8MVFicn"
-<<<<<<< HEAD
 
 USE_HARDENING=	relro:off
 
 PAGEEXEC_DISABLE=	share/chromium/chrome
 MPROTECT_DISABLE=	share/chromium/chrome
 
-.if !defined(GN_ONLY)
-=======
->>>>>>> upstream/master
 SUB_FILES=	chromium-browser.desktop chrome
 SUB_LIST+=	COMMENT="${COMMENT}"
 
