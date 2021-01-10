@@ -1803,11 +1803,13 @@
     SUBDIR += rubygem-actioncable50
     SUBDIR += rubygem-actioncable52
     SUBDIR += rubygem-actioncable60
+    SUBDIR += rubygem-actioncable61
     SUBDIR += rubygem-actionpack4
     SUBDIR += rubygem-actionpack5
     SUBDIR += rubygem-actionpack50
     SUBDIR += rubygem-actionpack52
     SUBDIR += rubygem-actionpack60
+    SUBDIR += rubygem-actionpack61
     SUBDIR += rubygem-activeresource
     SUBDIR += rubygem-activeresource4
     SUBDIR += rubygem-acts-as-taggable-on
@@ -2017,6 +2019,7 @@
     SUBDIR += rubygem-rails50
     SUBDIR += rubygem-rails52
     SUBDIR += rubygem-rails60
+    SUBDIR += rubygem-rails61
     SUBDIR += rubygem-rails_12factor
     SUBDIR += rubygem-rails_autolink
     SUBDIR += rubygem-rails_serve_static_assets
@@ -2026,6 +2029,7 @@
     SUBDIR += rubygem-railties50
     SUBDIR += rubygem-railties52
     SUBDIR += rubygem-railties60
+    SUBDIR += rubygem-railties61
     SUBDIR += rubygem-raindrops
     SUBDIR += rubygem-ramaze
     SUBDIR += rubygem-raphael-rails
