@@ -41,6 +41,7 @@
     SUBDIR += R-cran-ellipsis
     SUBDIR += R-cran-evaluate
     SUBDIR += R-cran-fansi
+    SUBDIR += R-cran-filelock
     SUBDIR += R-cran-foreach
     SUBDIR += R-cran-gbRd
     SUBDIR += R-cran-gbm
@@ -67,6 +68,7 @@
     SUBDIR += R-cran-pillar
     SUBDIR += R-cran-pkgbuild
     SUBDIR += R-cran-pkgconfig
+    SUBDIR += R-cran-pkgload
     SUBDIR += R-cran-pkgmaker
     SUBDIR += R-cran-plogr
     SUBDIR += R-cran-plyr
