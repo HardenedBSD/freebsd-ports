@@ -13,9 +13,13 @@ COMMENT=	Authoritative nameserver with DNSSEC capabilities
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
 
 USES=		libtool ssl
+=======
+USES=		compiler:c11 libtool ssl
+>>>>>>> freebsd/master
 USE_RC_SUBR=	${PORTNAME}d
 
 GNU_CONFIGURE=	yes
