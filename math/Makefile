@@ -228,6 +228,7 @@
     SUBDIR += dune-common
     SUBDIR += dune-curvedgeometry
     SUBDIR += dune-fem
+    SUBDIR += dune-foamgrid
     SUBDIR += dune-functions
     SUBDIR += dune-geometry
     SUBDIR += dune-grid
@@ -235,9 +236,11 @@
     SUBDIR += dune-localfunctions
     SUBDIR += dune-metagrid
     SUBDIR += dune-pdelab
+    SUBDIR += dune-polygongrid
     SUBDIR += dune-spgrid
     SUBDIR += dune-typetree
     SUBDIR += dune-uggrid
+    SUBDIR += dune-vtk
     SUBDIR += e-antic
     SUBDIR += eclib
     SUBDIR += ecos
