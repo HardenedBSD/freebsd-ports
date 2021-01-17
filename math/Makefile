@@ -227,11 +227,13 @@
     SUBDIR += dune-alugrid
     SUBDIR += dune-common
     SUBDIR += dune-curvedgeometry
+    SUBDIR += dune-fem
     SUBDIR += dune-functions
     SUBDIR += dune-geometry
     SUBDIR += dune-grid
     SUBDIR += dune-istl
     SUBDIR += dune-localfunctions
+    SUBDIR += dune-metagrid
     SUBDIR += dune-pdelab
     SUBDIR += dune-spgrid
     SUBDIR += dune-typetree
