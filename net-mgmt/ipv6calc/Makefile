@@ -12,11 +12,9 @@ COMMENT=	Convert, change, and calculate with IPv6 addresses
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-<<<<<<< HEAD
 USE_HARDENING=	cfi safestack
-=======
+
 BUILD_DEPENDS=	bash>0:shells/bash
->>>>>>> freebsd/master
 
 USES=		gmake perl5 shebangfix ssl
 
