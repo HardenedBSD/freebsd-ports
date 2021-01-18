@@ -12,6 +12,8 @@ COMMENT=	Fractal Generator
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USE_HARDENING=	stackautoinit:off
+
 USES=		compiler:c++11-lang tar:xz cmake qt:5
 USE_QT=		core xml widgets printsupport \
 		buildtools_build qmake_build linguisttools_build
