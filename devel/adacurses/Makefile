@@ -13,9 +13,13 @@ COMMENT=	Ada95 bindings for ncurses
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/README
 
+<<<<<<< HEAD
 USE_HARDENING=	pie:off retpoline:off
 
 USES=		ada gmake pkgconfig ncurses:port tar:tgz
+=======
+USES=		ada gmake pkgconfig tar:tgz
+>>>>>>> upstream/master
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ada-include=${PREFIX}/include/adacurses \
 		--with-ada-objects=${PREFIX}/lib/adacurses \
@@ -48,5 +52,13 @@ post-install:
 do-install-DOCS-on:
 	(cd ${WRKSRC}/doc && ${SETENV} ${MAKE_ENV} \
 		${MAKE_CMD} ${MAKE_ARGS} THIS=${PORTNAME} install.html)
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == "FreeBSD" && ${OSVERSION} >= 1300079
+USES+=		ncurses
+.else
+USES+=		ncurses:port
+.endif
 
 .include <bsd.port.mk>
