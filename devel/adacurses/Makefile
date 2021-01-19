@@ -13,13 +13,9 @@ COMMENT=	Ada95 bindings for ncurses
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/README
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off retpoline:off
 
-USES=		ada gmake pkgconfig ncurses:port tar:tgz
-=======
 USES=		ada gmake pkgconfig tar:tgz
->>>>>>> upstream/master
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ada-include=${PREFIX}/include/adacurses \
 		--with-ada-objects=${PREFIX}/lib/adacurses \
