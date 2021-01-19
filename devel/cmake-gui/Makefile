@@ -19,6 +19,8 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libuv.so:devel/libuv \
 		librhash.so:security/rhash
 
+USE_HARDENING=	stackautoinit:off
+
 USES=		cmake:run,insource compiler:c++11-lang desktop-file-utils libarchive \
 		shared-mime-info qt:5
 USE_QT=		core gui widgets buildtools_build qmake_build
