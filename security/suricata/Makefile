@@ -28,16 +28,12 @@ USE_LDCONFIG=	yes
 USE_RC_SUBR=	${PORTNAME}
 
 GNU_CONFIGURE=	yes
-<<<<<<< HEAD
 
 USE_HARDENING=	pie:configure safestack
 
-CPE_VENDOR=	openinfosecfoundation
-=======
 CONFIGURE_ARGS+=--enable-gccprotect \
 		--enable-bundled-htp \
 	        --disable-gccmarch-native
->>>>>>> upstream/master
 
 INSTALL_TARGET=		install-strip
 TEST_TARGET=		check
