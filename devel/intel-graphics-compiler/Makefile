@@ -21,6 +21,8 @@ ONLY_FOR_ARCHS_REASON=	Only Intel GPUs on x86 are supported
 
 LIB_DEPENDS=	libopencl-clang.so:devel/opencl-clang
 
+USE_HARDENING=	pie:off
+
 USES=		bison cmake compiler:c++17-lang python:build
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
