@@ -12,16 +12,12 @@ EXTRACT_SUFX=	-nogdb.tar.gz
 MAINTAINER=	cyberbotx@cyberbotx.com
 COMMENT=	TI89(ti)/92(+)/V200 hand-helds emulator
 
-<<<<<<< HEAD
-USE_HARDENING=	pie:off
-
-LIB_DEPENDS=	libticalcs2.so:comms/libticalcs2 \
-=======
 LICENSE=	GPLv2
+
+USE_HARDENING=	pie:off
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
->>>>>>> freebsd/master
 		libticables2.so:comms/libticables2 \
 		libticalcs2.so:comms/libticalcs2 \
 		libticonv.so:converters/libticonv \
