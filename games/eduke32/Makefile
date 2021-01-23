@@ -28,19 +28,15 @@ LICENSE_FILE_BUILDLIC=	${WRKSRC}/source/build/buildlic.txt
 LICENSE_FILE_GPLv2=	${WRKSRC}/source/duke3d/gpl-2.0.txt
 LICENSE_PERMS_BUILDLIC=	dist-mirror pkg-mirror auto-accept
 
+USE_HARDENING=	stackautoinit:off
+
 LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis \
 		libvpx.so:multimedia/libvpx \
 		libpng.so:graphics/png
 
-<<<<<<< HEAD
-USE_HARDENING=	stackautoinit:off
-
-USES=		dos2unix gl gmake gnome localbase pkgconfig sdl tar:xz
-=======
 USES=		compiler:c11 dos2unix gl gmake gnome localbase pkgconfig sdl tar:xz
->>>>>>> freebsd/master
 USE_GL=		gl glu
 USE_GNOME=	gtk20
 USE_SDL=	sdl2 mixer2
