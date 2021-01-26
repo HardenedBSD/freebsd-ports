@@ -11,7 +11,12 @@ DISTNAME=	${PORTNAME}-1.1
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Clone of the classic Rally X arcade game
 
+<<<<<<< HEAD
 USE_HARDENING=	pie:off relro:off
+=======
+BROKEN_FreeBSD_13=	duplicate symbol: radar
+BROKEN_FreeBSD_14=	duplicate symbol: radar
+>>>>>>> freebsd/master
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 HAS_CONFIGURE=	yes
