@@ -13,16 +13,12 @@ COMMENT=	Parser generator from FSF, (mostly) compatible with Yacc
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USE_HARDENING=	safestack
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	m4>=1.4.16,1:devel/m4
 
-<<<<<<< HEAD
-USE_HARDENING=	safestack
-
-USES=		charsetfix compiler:c11 localbase makeinfo perl5 tar:xz
-=======
 USES=		charsetfix compiler:c11 iconv localbase makeinfo perl5 readline tar:xz
->>>>>>> freebsd/master
 USE_PERL5=	build
 
 CONFIGURE_ARGS=	--disable-yacc --enable-relocatable
