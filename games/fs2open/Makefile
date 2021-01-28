@@ -17,13 +17,9 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libpng.so:graphics/png \
 		libfreetype.so:print/freetype2
 
-<<<<<<< HEAD
 USE_HARDENING=	stackautoinit:off
 
-USES=		cmake compiler:gcc-c++11-lib lua:51 jpeg openal pkgconfig sdl
-=======
 USES=		cmake compiler:c++11-lib lua:51 jpeg openal pkgconfig sdl
->>>>>>> freebsd/master
 USE_GITHUB=	yes
 GH_ACCOUNT=	scp-fs2open
 GH_PROJECT=	fs2open.github.com
