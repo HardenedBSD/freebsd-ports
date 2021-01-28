@@ -11,27 +11,10 @@ COMMENT=		Libheif is an ISO/IEC 23008-12:2017 HEIF file format de- and encoder
 LICENSE=		LGPL3+
 LICENSE_FILE_LGPL3+ =	${WRKSRC}/COPYING
 
-<<<<<<< HEAD
 USE_HARDENING=		stackautoinit:off
 
-USES=			autoreconf compiler:c++11-lang libtool localbase pkgconfig \
-			shebangfix
-USE_GITHUB=		yes
-GH_ACCOUNT=		strukturag
-GH_PROJECT=		libheif
-GNU_CONFIGURE=		yes
-CONFIGURE_ARGS=		--disable-go
-USE_LDCONFIG=		yes
-SHEBANG_GLOB=		*.sh
-INSTALL_TARGET=		install-strip
-
-OPTIONS_DEFINE=	EXAMPLES JPEG LIBDE265 PNG THREADS X265
-OPTIONS_DEFAULT=EXAMPLES JPEG LIBDE265 PNG THREADS X265
-OPTIONS_SUB=	yes
-=======
 LIB_DEPENDS=	libdav1d.so:multimedia/dav1d
 # Fails to find rav1e: https://github.com/strukturag/libheif/issues/429
->>>>>>> freebsd/master
 
 USES=			cmake compiler:c++11-lang gettext-runtime gnome localbase:ldflags pkgconfig
 USE_GNOME=		gdkpixbuf2 glib20
