@@ -5,11 +5,13 @@
 
     SUBDIR += R-cran-RgoogleMaps
     SUBDIR += R-cran-Rook
+    SUBDIR += R-cran-bslib
     SUBDIR += R-cran-crosstalk
     SUBDIR += R-cran-downloader
     SUBDIR += R-cran-htmlwidgets
     SUBDIR += R-cran-httpuv
     SUBDIR += R-cran-httr
+    SUBDIR += R-cran-jquerylib
     SUBDIR += R-cran-rvest
     SUBDIR += R-cran-scrapeR
     SUBDIR += R-cran-selectr
