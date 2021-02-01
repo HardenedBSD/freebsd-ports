@@ -15,14 +15,8 @@ COMMENT=		Libheif is an ISO/IEC 23008-12:2017 HEIF file format de- and encoder
 LICENSE=		LGPL3+
 LICENSE_FILE_LGPL3+ =	${WRKSRC}/COPYING
 
-<<<<<<< HEAD
 USE_HARDENING=		stackautoinit:off
 
-LIB_DEPENDS=	libdav1d.so:multimedia/dav1d \
-		librav1e.so:multimedia/librav1e
-
-=======
->>>>>>> upstream/master
 USES=			cmake compiler:c++11-lang gettext-runtime gnome localbase:ldflags pkgconfig
 USE_GNOME=		gdkpixbuf2 glib20
 USE_LDCONFIG=		yes
