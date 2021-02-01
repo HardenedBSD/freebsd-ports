@@ -193,8 +193,8 @@
     SUBDIR += gost-engine
     SUBDIR += govpn
     SUBDIR += gpa
-    SUBDIR += gpgdir
     SUBDIR += gpg-gui
+    SUBDIR += gpgdir
     SUBDIR += gpgme
     SUBDIR += gpgme-cpp
     SUBDIR += gpgme-qt5
@@ -208,8 +208,8 @@
     SUBDIR += gstreamer1-plugins-dtls
     SUBDIR += gtkpasman
     SUBDIR += gvm
-    SUBDIR += gvmd
     SUBDIR += gvm-libs
+    SUBDIR += gvmd
     SUBDIR += gwee
     SUBDIR += hackbot
     SUBDIR += hardening-check
