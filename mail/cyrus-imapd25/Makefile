@@ -13,6 +13,8 @@ COMMENT=	Cyrus mail server, supporting POP3 and IMAP4 protocols
 LICENSE=	BSD4CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USE_HARDENING=	pie:off
+
 BROKEN_armv6=		fails to build: ./tools/config2header: Error code 1
 BROKEN_armv7=		fails to build: ./tools/config2header: Error code 1
 BROKEN_riscv64=		fails to build: lib/imapopts.c: Error 1
@@ -23,13 +25,6 @@ LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2 \
 CONFLICTS_INSTALL=	cyrus-imapd-2.[^5].* cyrus-imapd2[^5]-2.[^5].* \
 			cyrus-imapd3*
 
-<<<<<<< HEAD
-USE_HARDENING=	pie:off
-
-USE_RC_SUBR=	imapd
-
-=======
->>>>>>> freebsd/master
 USES=		cpe libtool perl5 ssl
 USE_RC_SUBR=	imapd
 GNU_CONFIGURE=	yes
