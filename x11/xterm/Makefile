@@ -17,16 +17,9 @@ COMMENT=	Terminal emulator for the X Window System
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
 
-USES=		cpe localbase ncurses tar:tgz xorg
-USE_XORG=	xft xmu xt x11 xext xpm ice
-
-GNU_CONFIGURE=	yes
-=======
 LIB_DEPENDS+=	libfontconfig.so:x11-fonts/fontconfig
->>>>>>> freebsd/master
 
 USES=			cpe localbase ncurses tar:tgz xorg
 CPE_VENDOR=		invisible-island
