@@ -287,13 +287,13 @@
     SUBDIR += kf5-kjsembed
     SUBDIR += kiwix-tools
     SUBDIR += kohana
+    SUBDIR += lagrange
     SUBDIR += larbin
     SUBDIR += libapreq2
     SUBDIR += libdom
     SUBDIR += libecap
     SUBDIR += libepc
     SUBDIR += libevhtp
-    SUBDIR += libgtkhtml
     SUBDIR += libhubbub
     SUBDIR += libjwt
     SUBDIR += libmicrohttpd
@@ -2158,7 +2158,6 @@
     SUBDIR += suphp
     SUBDIR += surf
     SUBDIR += swiggle
-    SUBDIR += syndigator
     SUBDIR += tclhttpd
     SUBDIR += tclwebtest
     SUBDIR += tdiary
