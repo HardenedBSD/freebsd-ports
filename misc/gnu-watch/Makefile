@@ -12,6 +12,8 @@ COMMENT=	GNU watch command
 
 LICENSE=	GPLv2
 
+USE_HARDENING=	safestack
+
 USES=		autoreconf gmake libtool localbase:ldflags ncurses pkgconfig \
 		tar:xz
 USE_CSTD=	gnu99
@@ -22,14 +24,7 @@ GL_PROJECT=	procps
 GL_COMMIT=	19a508ea121c0c4ac6d0224575a036de745eaaf8
 GNU_CONFIGURE=	yes
 
-<<<<<<< HEAD
-USE_HARDENING=	safestack
-
-OPTIONS_DEFINE=	UNICODE
-OPTIONS_DEFAULT=UNICODE
-=======
 ALL_TARGET=	watch
->>>>>>> freebsd/master
 
 PLIST_FILES=	bin/${PKGBASE} \
 		man/man1/gnu-watch.1.gz
