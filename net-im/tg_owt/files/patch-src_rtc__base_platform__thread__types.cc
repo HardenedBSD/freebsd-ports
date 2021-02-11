@@ -1,5 +1,5 @@
---- tg_owt/src/rtc_base/platform_thread_types.cc.orig	2020-08-30 09:41:57 UTC
-+++ tg_owt/src/rtc_base/platform_thread_types.cc
+--- src/rtc_base/platform_thread_types.cc.orig	2021-02-03 11:42:41 UTC
++++ src/rtc_base/platform_thread_types.cc
 @@ -11,10 +11,14 @@
  #include "rtc_base/platform_thread_types.h"
  
@@ -13,10 +13,10 @@
 +#include <pthread_np.h>
 +#endif
 +
- namespace rtc {
+ #if defined(WEBRTC_WIN)
+ #include "rtc_base/arraysize.h"
  
- PlatformThreadId CurrentThreadId() {
-@@ -28,7 +32,13 @@ PlatformThreadId CurrentThreadId() {
+@@ -38,7 +42,13 @@ PlatformThreadId CurrentThreadId() {
  #elif defined(WEBRTC_FUCHSIA)
    return zx_thread_self();
  #elif defined(WEBRTC_LINUX)
@@ -30,7 +30,7 @@
  #elif defined(__EMSCRIPTEN__)
    return static_cast<PlatformThreadId>(pthread_self());
  #else
-@@ -78,9 +88,7 @@ void SetCurrentThreadName(const char* name) {
+@@ -106,9 +116,7 @@ void SetCurrentThreadName(const char* name) {
    }
  #pragma warning(pop)
  #elif defined(WEBRTC_LINUX) || defined(WEBRTC_ANDROID)

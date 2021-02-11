@@ -1,5 +1,5 @@
---- tg_owt/cmake/libevent.cmake.orig	2020-08-30 09:41:57 UTC
-+++ tg_owt/cmake/libevent.cmake
+--- cmake/libevent.cmake.orig	2021-02-03 11:42:41 UTC
++++ cmake/libevent.cmake
 @@ -17,14 +17,13 @@ if (APPLE)
  else()
      target_include_directories(libevent
