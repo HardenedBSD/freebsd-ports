@@ -12,13 +12,17 @@ COMMENT=	GNU watch command
 
 LICENSE=	GPLv2
 
+<<<<<<< HEAD
 USE_HARDENING=	safestack
 
 USES=		autoreconf gmake libtool localbase:ldflags ncurses pkgconfig \
 		tar:xz
+=======
+USES=		autoreconf gettext-tools gmake libtool localbase:ldflags \
+		ncurses pkgconfig tar:xz
+>>>>>>> freebsd/master
 USE_CSTD=	gnu99
 USE_GITLAB=	yes
-GL_SITE=	https://gitlab.com
 GL_ACCOUNT=	procps-ng
 GL_PROJECT=	procps
 GL_COMMIT=	19a508ea121c0c4ac6d0224575a036de745eaaf8
