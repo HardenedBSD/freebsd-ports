@@ -33,12 +33,9 @@ OPTIONS_SUB=	yes
 STATIC_TOR_DESC=	Build a static tor
 TCMALLOC_DESC=		Use the tcmalloc memory allocation library
 COMPRESSION_DESC=	Supported compression libraries
-<<<<<<< HEAD
 OPTIONS_GROUP_HARDENING+=	CFI_ICALL
 CFI_ICALL_DESC=		Enable cfi-icall scheme. Breaks relay mode. Client only
-=======
 TRACING_DESC=		Tracing
->>>>>>> upstream/master
 
 USE_RC_SUBR=	tor
 SUB_FILES=	pkg-message
