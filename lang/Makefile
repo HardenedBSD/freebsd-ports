@@ -327,6 +327,7 @@
     SUBDIR += sketchy
     SUBDIR += slib
     SUBDIR += slib-guile
+    SUBDIR += slib-guile1
     SUBDIR += slib-guile2
     SUBDIR += slisp
     SUBDIR += smalltalk
@@ -342,7 +343,6 @@
     SUBDIR += squeak
     SUBDIR += squirrel
     SUBDIR += swi-pl
-    SUBDIR += tauthon
     SUBDIR += tcbasic
     SUBDIR += tcc
     SUBDIR += tcl-manual
