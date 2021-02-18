@@ -12,6 +12,8 @@ COMMENT=	Bozotic HTTP server from NetBSD
 
 LICENSE=	BSD2CLAUSE
 
+USE_HARDENING=	stackautoinit:off
+
 USES=		cpe uidfix tar:bzip2
 CPE_VENDOR=	eterna
 
@@ -24,12 +26,6 @@ BLACKLIST_DESC=		Report Unauthorized and Forbidden accesses to blacklistd
 BLACKLIST_CFLAGS_OFF=	-DNO_BLACKLIST_SUPPORT
 BLACKLIST_LIBS=		-lblacklist
 
-<<<<<<< HEAD
-USE_HARDENING=	stackautoinit:off
-
-USES=		cpe uidfix tar:bzip2
-CPE_VENDOR=	eterna
-=======
 CGI_DESC=		Common Gateway Interface (CGI) support (-C, -c, -E, -e)
 CGI_CFLAGS_OFF=		-DNO_CGIBIN_SUPPORT
 
@@ -41,7 +37,6 @@ DEBUG_CFLAGS_OFF=	-DNO_DEBUG
 
 DIRINDEX_DESC=		Automatic directory index if index.html is missing (-X)
 DIRINDEX_CFLAGS_OFF=	-DNO_DIRINDEX_SUPPORT
->>>>>>> freebsd/master
 
 DYNAMIC_DESC=		Dynamic content based on file suffixes (-C, -M)
 DYNAMIC_CFLAGS_OFF=	-DNO_DYNAMIC_CONTENT
