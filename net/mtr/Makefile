@@ -13,6 +13,8 @@ COMMENT=	Traceroute and ping in a single network diagnostic tool
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USE_HARDENING=	safestack
+
 USES=		autoreconf ncurses pkgconfig
 
 GNU_CONFIGURE=	yes
@@ -23,16 +25,9 @@ USE_GITHUB=	yes
 
 CONFLICTS_INSTALL?=	mtr-nox11
 
-<<<<<<< HEAD
-USE_HARDENING=	safestack
-
-OPTIONS_DEFINE=	IPV6 X11
-OPTIONS_DEFAULT=X11
-=======
 OPTIONS_DEFINE=	IPV6 JSON X11
 OPTIONS_DEFAULT=JSON X11
 JSON_DESC=	JSON support
->>>>>>> freebsd/master
 X11_DESC=	Build X11-enabled mtr
 
 IPV6_CONFIGURE_ENABLE=	ipv6
