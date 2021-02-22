@@ -12,13 +12,9 @@ COMMENT=	QEMU CPU Emulator - development version
 
 LICENSE=	GPLv2
 
-<<<<<<< HEAD
 USE_HARDENING=	pie:off
 
-ONLY_FOR_ARCHS=	amd64 powerpc powerpc64
-=======
 ONLY_FOR_ARCHS=	amd64 powerpc powerpc64 powerpc64 powerpc64le
->>>>>>> upstream/master
 IGNORE_FreeBSD_11=	Unable to produce Position Independent Code
 
 BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx \

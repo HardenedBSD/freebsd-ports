@@ -14,13 +14,13 @@ COMMENT=	Package manager
 
 LICENSE=	BSD2CLAUSE
 
-USE_GITLAB=	gitea
-GL_SITE=	https://git-01.md.hardenedbsd.org
+USE_GITLAB=	yes
+GL_SITE=	https://git.hardenedbsd.org
 GL_ACCOUNT=	HardenedBSD
 GL_PROJECT=	pkg
 GL_COMMIT=	bd298b04d243ae8a16b8b933bd4b97904336be35
 
-WRKSRC=		${WRKDIR}/pkg
+#WRKSRC=		${WRKDIR}/pkg
 
 USE_LDCONFIG=	${PREFIX}/lib/compat/pkg
 HAS_CONFIGURE=	yes
