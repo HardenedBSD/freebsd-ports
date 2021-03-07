@@ -20,16 +20,9 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 
 DISTINFO_FILE=		${.CURDIR}/../thrift/distinfo
 
-<<<<<<< HEAD
-BROKEN_SSL=	openssl
-BROKEN_SSL_REASON_openssl=	'configure: error: "Error: libcrypto required."'
-
 USE_HARDENING=		stackautoinit:off
 
-USES=			autoreconf pkgconfig gmake compiler:c++11-lang \
-=======
 USES=			bison cmake pkgconfig compiler:c++11-lang \
->>>>>>> upstream/master
 			libtool pathfix ssl
 USE_LDCONFIG=		yes
 MAKE_JOBS_UNSAFE=	yes
