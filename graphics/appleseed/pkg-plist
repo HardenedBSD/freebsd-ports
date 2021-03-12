@@ -6,6 +6,14 @@ share/cmake/Modules/FindPartio.cmake
 share/cmake/Modules/FindSeExpr.cmake
 share/cmake/Modules/FindSeExprEditor.cmake
 share/cmake/Modules/FindXerces.cmake
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/__init__.py
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/_appleseedpython3.so
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/logtarget.py
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/test/runtests.py
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/test/testbasis.py
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/test/testdict2dict.py
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/test/testentitymap.py
+%%PYTHON%%%%PYTHON_SITELIBDIR%%/appleseed/test/testentityvector.py
 @cwd %%APPHOME%%
 bin/animatecamera
 bin/appleseed.cli
