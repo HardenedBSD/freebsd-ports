@@ -82,6 +82,8 @@ OPTIONS_DEFAULT_powerpc64=     ${OPTIONS_DEFAULT_powerpc64_${OSREL:R}} OPENMP
 OPTIONS_DEFAULT_powerpc64_13=  GOLD
 OPTIONS_DEFAULT_powerpc64_14=  GOLD
 OPTIONS_SUB=	yes
+_ALL_OPTIONS=	CLANG COMPILER_RT DOCS EXTRAS FLANG GOLD LIT LLD LLDB MLIR \
+		OPENMP
 
 # Pre-declared for options framework
 LIB_DEPENDS=
@@ -226,7 +228,7 @@ MLIR_PATTERN=	${MLIR_COMMANDS:S/^/bin./:tW:C/  */|/g}|mlir|libMLIR
 
 .include <bsd.port.options.mk>
 
-# keep in sync with /usr/src/lib/clang/clang.build.mk 
+# keep in sync with /usr/src/lib/clang/clang.build.mk
 # ----------- start of sync block ------------------
 # Armv6 and armv7 uses hard float abi, unless the CPUTYPE has soft in it.
 # arm (for armv4 and armv5 CPUs) always uses the soft float ABI.
@@ -234,7 +236,7 @@ MLIR_PATTERN=	${MLIR_COMMANDS:S/^/bin./:tW:C/  */|/g}|mlir|libMLIR
 .if ${ARCH:Marmv[67]*} && (!defined(CPUTYPE) || ${CPUTYPE:M*soft*} == "")
 TARGET_ABI=	-gnueabihf
 .elif ${ARCH:Marm*}
-TARGET_ABI=	-gnueabi  
+TARGET_ABI=	-gnueabi
 .else
 TARGET_ABI=
 .endif
@@ -381,23 +383,12 @@ _COMPILER_RT_LIBS+= \
 	libclang_rt.ubsan_standalone_cxx-i386.a
 .endif
 
-.if ! ${OPTIONS_DEFINE:MCOMPILER_RT}
-# Hack to disable COMPILER_RT in plist of unsupported architectures
-PLIST_SUB+=	COMPILER_RT="@comment "
-.else
+# Comment out plist entries for unsupported options.
+.for opt in ${_ALL_OPTIONS}
+.if !${OPTIONS_DEFINE:M${opt}}
+PLIST_SUB+=	${opt}="@comment "
 .endif
-
-.if ! ${OPTIONS_DEFINE:MGOLD}
-# Hack to disable GOLD in plist of unsupported architectures
-PLIST_SUB+=	GOLD="@comment "
-.else
-.endif
-
-.if ! ${OPTIONS_DEFINE:MOPENMP}
-# Hack to disable OPENMP in plist of unsupported architectures
-PLIST_SUB+=	OPENMP="@comment "
-.else
-.endif
+.endfor
 
 post-patch:
 	${REINPLACE_CMD} -e 's|import lit|import lit${LLVM_SUFFIX}|' \
@@ -451,8 +442,8 @@ post-install-DOCS-off:
 post-install-CLANG-on:
 	${LN} -f ${STAGEDIR}${LLVM_PREFIX}/bin/clang \
 	    ${STAGEDIR}${LLVM_PREFIX}/bin/clang-cpp
-	@${MKDIR} ${STAGEDIR}${PREFIX}/share/toolchains/
-	@${INSTALL_DATA} ${WRKDIR}/xtoolchain.mk \
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/toolchains/
+	${INSTALL_DATA} ${WRKDIR}/xtoolchain.mk \
 	    ${STAGEDIR}${PREFIX}/share/toolchains/llvm${LLVM_SUFFIX}.mk
 
 post-install-COMPILER_RT-on:

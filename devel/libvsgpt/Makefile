@@ -1,22 +1,23 @@
+# Created by: Antoine Brodin <antoine@FreeBSD.org>
 # $FreeBSD$
 
-PORTNAME=	libfsext
+PORTNAME=	libvsgpt
 # If/When moving from experimental to alpha, switch to DISTVERSIONPREFIX to prevent PORTEPOCH
-DISTVERSION=	experimental-20210129
+DISTVERSION=	experimental-20210207
 CATEGORIES=	devel
-MASTER_SITES=	https://github.com/libyal/libfsext/releases/download/${PORTVERSION:E}/ \
+MASTER_SITES=	https://github.com/libyal/libvsgpt/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine
 
 MAINTAINER=	antoine@FreeBSD.org
-COMMENT=	Library and tools to access the Extended File System
+COMMENT=	Library and tools to access the GPT volume system format
 
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-python --with-openssl=no
+CONFIGURE_ARGS=	--enable-python
 CONFIGURE_ENV=	PYTHON_CONFIG=${PYTHON_CMD}-config
-USES=		libtool pathfix python:3.5+
+USES=		libtool pathfix python:3.6+
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:E}
