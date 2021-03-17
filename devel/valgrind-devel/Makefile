@@ -59,7 +59,7 @@ MPI_LIB_DEPENDS=	libmpich.so:net/mpich
 .include <bsd.port.options.mk>
 
 .if ${ARCH} == "amd64"
-PLIST_SUB+=	AMD64="" ARCH=amd64
+PLIST_SUB+=	AMD64=""
 . if !${PORT_OPTIONS:M32BIT}
 CONFIGURE_ARGS+=	--enable-only64bit
 PLIST_SUB+=	X86="@comment "
@@ -71,8 +71,8 @@ distribution or run 'make config' and uncheck 32BIT option
 PLIST_SUB+=	X86=""
 . endif
 .else
-PLIST_SUB+=	X86="" ARCH=x86
 PLIST_SUB+=	AMD64="@comment "
+PLIST_SUB+=	X86=""
 .endif
 
 .if !${PORT_OPTIONS:MDOCS}
