@@ -18,13 +18,9 @@ COMMENT=	Optimized BLAS library based on GotoBLAS2
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-<<<<<<< HEAD
 USE_HARDENING=	stackautoinit:off
 
-USES=		fortran gmake perl5 pkgconfig
-=======
 USES=		compiler:c11 fortran gmake perl5 pkgconfig
->>>>>>> upstream/master
 
 CONFLICTS_INSTALL=	cblas lapacke
 
