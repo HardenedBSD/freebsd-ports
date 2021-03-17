@@ -3,6 +3,7 @@
 
 PORTNAME=	scrot
 DISTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org
