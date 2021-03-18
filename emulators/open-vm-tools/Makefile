@@ -34,19 +34,13 @@ USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	vmware-guestd vmware-kmod
 
-<<<<<<< HEAD
 USE_HARDENING=		stackautoinit:off
 
-GNU_CONFIGURE=		yes
-USES=			autoreconf fuse gettext-runtime kmod libtool localbase pathfix pkgconfig gnome
-USE_GNOME=		glib20
-=======
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--disable-vgauth \
 		--sysconfdir=${PREFIX}/etc \
 		--without-icu
 CONFIGURE_ENV+=	SYSDIR=${SRC_BASE}/sys
->>>>>>> upstream/master
 
 INSTALL_TARGET=	install-strip
 
