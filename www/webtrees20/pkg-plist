@@ -286,7 +286,7 @@
 %%WWWDIR%%/app/Elements/FileName.php
 %%WWWDIR%%/app/Elements/FirstCommunion.php
 %%WWWDIR%%/app/Elements/Form.php
-%%WWWDIR%%/app/Elements/Gedcom.php
+%%WWWDIR%%/app/Elements/GedcomElement.php
 %%WWWDIR%%/app/Elements/GenerationsOfAncestors.php
 %%WWWDIR%%/app/Elements/GenerationsOfDescendants.php
 %%WWWDIR%%/app/Elements/GovIdType.php
