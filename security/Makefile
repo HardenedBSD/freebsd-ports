@@ -1299,6 +1299,7 @@
     SUBDIR += wolfssh
     SUBDIR += wolfssl
     SUBDIR += wpa_supplicant
+    SUBDIR += wpa_supplicant-devel
     SUBDIR += xca
     SUBDIR += xinetd
     SUBDIR += xml-security
