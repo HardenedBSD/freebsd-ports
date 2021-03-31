@@ -12,12 +12,8 @@ COMMENT=	Unix system management and proactive monitoring
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-<<<<<<< HEAD
 USE_HARDENING=	safestack
 
-GNU_CONFIGURE=	yes
-=======
->>>>>>> upstream/master
 USES=		bison gmake
 USE_RC_SUBR=	${PORTNAME}
 
