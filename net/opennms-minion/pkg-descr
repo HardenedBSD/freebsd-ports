@@ -1,0 +1,10 @@
+OpenNMS Minion allows an OpenNMS deployment to run in a distributed manner.    
+
+OpenNMS Minion is an instance of the Karaf OSGi service that can run
+distributed OpenNMS components that are packaged as Karaf features. Minion
+devices are configured with a minimum amount of information necessary to
+connect to the OpenNMS machine and identify themselves to it. The operation of
+each Minion is controlled from the Dominion service running on a central
+OpenNMS installation.
+
+WWW: http://www.opennms.org

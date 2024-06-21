@@ -1,0 +1,11 @@
+TIMESTAMP = 1556298487
+SHA256 (opennms-minion-container-24.0.0-1.noarch.rpm) = 50631a694d55ea48b2e10a285bd0b24934ffae86abcf40b2f08e64b2dbd1904c
+SIZE (opennms-minion-container-24.0.0-1.noarch.rpm) = 83528154
+SHA256 (opennms-minion-features-core-24.0.0-1.noarch.rpm) = 4e898916efb4899445466efab6ee7dc624694d17c3b2e41fbe37044393bf8141
+SIZE (opennms-minion-features-core-24.0.0-1.noarch.rpm) = 29409028
+SHA256 (opennms-minion-features-default-24.0.0-1.noarch.rpm) = 8f307bc43848b5853f72a28ee5afd2e743ebf2470a199b38ea4672bec0bd1cae
+SIZE (opennms-minion-features-default-24.0.0-1.noarch.rpm) = 148690825
+SHA256 (net/java/dev/jna/jna/4.5.1/jna-4.5.1.jar) = fbc9de96a0cc193a125b4008dbc348e9ed54e5e13fc67b8ed40e645d303cc51b
+SIZE (net/java/dev/jna/jna/4.5.1/jna-4.5.1.jar) = 1440662
+SHA256 (net/java/dev/jna/jna-platform/4.5.1/jna-platform-4.5.1.jar) = 84c8667555ee8dd91fef44b451419f6f16f71f727d5fc475a10c2663eba83abb
+SIZE (net/java/dev/jna/jna-platform/4.5.1/jna-platform-4.5.1.jar) = 2327547
